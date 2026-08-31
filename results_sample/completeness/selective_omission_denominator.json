@@ -1,0 +1,27 @@
+{
+  "details": {
+    "cohortCommitment": "0x1bcf80182ea677d40db839d8639f0fc7c430b9cd1e4df936984395b06a9e4499",
+    "cohortId": "0x3333333333333333333333333333333333333333333333333333333333333333",
+    "deadline": 2000000000,
+    "epoch": 1,
+    "expectedCount": 10,
+    "failCount": 0,
+    "missingCount": 2,
+    "protocol_version": "V2",
+    "receiptRoot": "0xe676dd9508b25ae930585a5e5149b888a40aac065974090a797e1168a1e154d2",
+    "receivedValidCount": 8,
+    "rejectedCount": 0,
+    "releaseId": 1,
+    "rollbackCount": 0,
+    "rolloutId": "0x2222222222222222222222222222222222222222222222222222222222222222",
+    "successCount": 8,
+    "successRateExpectedCohort": 0.8,
+    "terminalOutcomeRoot": "0xb566c87547dba8e23fc236681c163f301a8a3fa40cb30a586bf955655cdaeb27"
+  },
+  "evidence_type": "software_emulation",
+  "expected_behavior": "Omitted failed devices remain missing and cannot reduce the success denominator.",
+  "observed_behavior": "success=8, expected=10, missing=2, rate=0.8",
+  "status": "passed",
+  "test_id": "selective_omission_denominator",
+  "timestamp_utc": "2026-08-29T14:42:30.507770Z"
+}

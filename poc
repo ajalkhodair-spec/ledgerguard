@@ -1,0 +1,50 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [ -x /Applications/Docker.app/Contents/Resources/bin/docker ]; then
+  export PATH="/Applications/Docker.app/Contents/Resources/bin:$PATH"
+fi
+
+CMD=${1:-}
+shift || true
+
+case "$CMD" in
+  doctor)
+    ./scripts/doctor.sh
+    ;;
+  run)
+    if [ "${1:-}" = "--suite" ] && [ "${2:-}" = "q1" ]; then
+      PYTHON_BIN=${PYTHON_BIN:-python3}
+      "$PYTHON_BIN" ./scripts/q1_suite.py run
+    elif [ "${1:-}" = "--suite" ] && [ "${2:-}" = "strong_eval" ]; then
+      ./experiments/runners/run_all_strong_eval.sh
+    else
+      ./scripts/run_experiment.sh "$@"
+    fi
+    ;;
+  results)
+    if [ "${1:-}" = "--suite" ] && [ "${2:-}" = "q1" ]; then
+      PYTHON_BIN=${PYTHON_BIN:-python3}
+      "$PYTHON_BIN" ./scripts/q1_suite.py results
+    elif [ "${1:-}" = "--suite" ] && [ "${2:-}" = "strong_eval" ]; then
+      PYTHON_BIN=${PYTHON_BIN:-python3}
+      "$PYTHON_BIN" ./experiments/analysis/audit_repo.py
+      "$PYTHON_BIN" ./experiments/analysis/aggregate_results.py --results-dir results
+      "$PYTHON_BIN" ./experiments/analysis/make_workbook.py --results-dir results
+      "$PYTHON_BIN" ./experiments/analysis/make_tables.py --results-dir results --out-dir paper_assets/tables
+      "$PYTHON_BIN" ./experiments/analysis/make_figures.py --results-dir results --out-dir paper_assets/figures
+      "$PYTHON_BIN" ./experiments/analysis/write_text_outputs.py --results-dir results
+      "$PYTHON_BIN" ./experiments/analysis/validate_results.py --results-dir results
+    else
+      ./scripts/generate_results.sh "$@"
+    fi
+    ;;
+  down)
+    docker compose down -v
+    ;;
+  *)
+    echo "Usage: ./poc {doctor|run|results|down}"
+    echo "Suites: ./poc run --suite q1 | ./poc run --suite strong_eval"
+    exit 1
+    ;;
+esac

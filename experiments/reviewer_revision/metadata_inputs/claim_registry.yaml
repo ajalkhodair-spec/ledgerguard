@@ -1,0 +1,116 @@
+schema_version: 2
+status_values: [supported, partial, blocked]
+claims:
+  - id: C01
+    text: "The V2 control-plane evaluation used a local four-validator IBFT2 Besu network."
+    claim_locations: [abstract, experimental_setup, results, README, reviewer_response]
+    evidence_type: local_configuration_and_deployment
+    required_sources: [results/reviewer_revision/raw/besu_v2_final/deployment.json, network/genesis.json]
+    status: supported
+  - id: C02
+    text: "V2 governance operations were repeated 50 times, with submission-to-receipt latency dominated by block production and receipt polling."
+    claim_locations: [abstract, results, discussion, conclusion, reviewer_response]
+    evidence_type: local_besu_measurement
+    required_sources: [results/reviewer_revision/csv/besu_v2_final_timing_complete.csv, results/reviewer_revision/statistics/besu_v2_final_timing_summary.csv, results/reviewer_revision/statistics/block_period_sensitivity_summary.csv, results/reviewer_revision/validation/timing_statistics_status.json, results/reviewer_revision/validation/block_period_status.json]
+    status: supported
+  - id: C03
+    text: "The local persistent-backend comparison implements common V2 authorization, approval, rollout, outcome, and audit semantics without claiming distributed consensus."
+    claim_locations: [experimental_setup, results, discussion, reviewer_response]
+    evidence_type: local_persistent_backend_measurement
+    required_sources: [results/reviewer_revision/validation/baseline_equivalence_matrix.csv, results/reviewer_revision/statistics/besu_vs_http_sqlite_v2.csv, results/reviewer_revision/validation/timing_statistics_status.json]
+    status: supported
+  - id: C04
+    text: "V2 authenticates software-emulated device receipts and rejects tested altered, cross-chain, cross-contract, cross-release, and revoked-signer cases."
+    claim_locations: [contributions, results, discussion, conclusion, README, reviewer_response]
+    evidence_type: contract_and_software_test
+    required_sources: [contracts/test/LedgerGuardV2.t.sol, results/reviewer_revision/csv/aggregation_completeness_tests.csv, results/reviewer_revision/raw/security/foundry_final.txt]
+    status: supported
+  - id: C05
+    text: "Under the independent aggregator/witness assumption, omitted devices remain in the expected-cohort denominator and cannot increase the recorded success rate."
+    claim_locations: [contributions, results, discussion, conclusion, reviewer_response]
+    evidence_type: contract_test_and_software_emulation
+    required_sources: [results/reviewer_revision/csv/aggregation_completeness_tests.csv, results/reviewer_revision/csv/independent_witness_tests.csv, contracts/test/LedgerGuardV2.t.sol, contracts/test/LedgerGuardV2Invariant.t.sol]
+    status: supported
+  - id: C06
+    text: "Parallel local Besu races produced one accepted transition and one mined revert in all 25 tested state-conflict cases."
+    claim_locations: [results, discussion, reviewer_response]
+    evidence_type: parallel_local_besu_rpc
+    required_sources: [results/reviewer_revision/csv/concurrency_and_replay_tests.csv, results/reviewer_revision/raw/concurrency/rpc_races.jsonl, results/reviewer_revision/validation/concurrency_status.json]
+    status: supported
+  - id: C07
+    text: "The authenticated software-emulated fleet evaluation executed 180 runs with 20 seeds per configuration and preserved 96,000 signed receipts."
+    claim_locations: [abstract, experimental_setup, results, conclusion, README]
+    evidence_type: authenticated_software_emulation
+    required_sources: [results/reviewer_revision/csv/fleet_multiseed_runs.csv, results/reviewer_revision/statistics/fleet_multiseed_summary.csv, results/reviewer_revision/validation/fleet_statistics_status.json]
+    status: supported
+  - id: C08
+    text: "Current V2 deployment and governance-operation gas were collected without currency conversion."
+    claim_locations: [results, discussion, reviewer_response]
+    evidence_type: local_besu_measurement
+    required_sources: [results/reviewer_revision/statistics/gas_summary_final.csv, results/reviewer_revision/validation/gas_final_status.json]
+    status: supported
+  - id: C09
+    text: "Naive and Merkle accountability paths were executed locally, while fleet and batch-size scaling rows remain analytical calculations based on measured gas medians and compiler storage layouts."
+    claim_locations: [results, discussion, conclusion, README, reviewer_response]
+    evidence_type: local_besu_measurement_and_analytical_scaling
+    required_sources: [results/reviewer_revision/csv/accountability_measured.csv, results/reviewer_revision/csv/accountability_ablation.csv, results/reviewer_revision/validation/accountability_status.json]
+    status: supported
+  - id: C10
+    text: "Twenty application-shaped local IPFS fetches completed for each of three configured application-delay/read-rate profiles; these are not packet-level or WAN observations."
+    claim_locations: [experimental_setup, results, limitations, README]
+    evidence_type: application_shaped_local_ipfs_fetch
+    required_sources: [results/reviewer_revision/csv/network_sensitivity.csv, results/reviewer_revision/validation/network_status.json]
+    status: supported
+  - id: C11
+    text: "Ten independently reset cache-ON trials each made one origin request and 999 cache hits for 1,000 requests."
+    claim_locations: [results, discussion, README]
+    evidence_type: executed_local_ipfs_edge_cache
+    required_sources: [results/reviewer_revision/csv/edge_cache_ablation.csv, results/reviewer_revision/validation/cache_status.json]
+    status: supported
+  - id: C12
+    text: "In five local crash-fault trials, four-validator IBFT2 block production continued with one validator stopped, ceased with two stopped, and resumed after one validator restarted."
+    claim_locations: [results, threat_model, discussion, limitations, reviewer_response]
+    evidence_type: fresh_local_besu_crash_fault_measurement
+    required_sources: [results/reviewer_revision/csv/validator_faults.csv, results/reviewer_revision/validation/validator_fault_status.json]
+    status: supported
+  - id: C13
+    text: "The V2 contracts passed the recorded Foundry, fuzz, invariant, coverage, and reviewed Slither gates."
+    claim_locations: [results, security, limitations, README, reviewer_response]
+    evidence_type: property_test_and_static_analysis
+    required_sources: [results/reviewer_revision/raw/security/foundry_final.txt, results/reviewer_revision/raw/security/foundry_coverage_final.txt, results/reviewer_revision/validation/foundry_final_status.json, results/reviewer_revision/validation/slither_status.json, results/reviewer_revision/validation/slither_triage.md]
+    status: supported
+  - id: C14
+    text: "LedgerGuard V2 was validated on physical firmware devices or hardware-backed keys."
+    claim_locations: [abstract, results, conclusion, cover_letter, README]
+    evidence_type: hardware
+    required_sources: [results/reviewer_revision/raw/hil/]
+    status: blocked
+    limitation: "No physical device was available; HIL remains scaffolded and not run."
+  - id: C15
+    text: "The current implementation is production-ready or deployment-scale."
+    claim_locations: [abstract, conclusion, cover_letter, README]
+    evidence_type: production_deployment
+    required_sources: []
+    status: blocked
+    limitation: "The evidence supports a research PoC under controlled local conditions only."
+  - id: C16
+    text: "Mythril found no vulnerabilities in the V2 contracts."
+    claim_locations: [results, security, reviewer_response]
+    evidence_type: symbolic_analysis
+    required_sources: []
+    status: blocked
+    limitation: "Mythril was not run."
+  - id: C17
+    text: "LedgerGuard provides verified novelty over TUF, Uptane, and transparency-log alternatives."
+    claim_locations: [introduction, related_work, contributions, cover_letter, reviewer_response]
+    evidence_type: external_literature_comparison
+    required_sources: []
+    status: partial
+    limitation: "Comparison cells require manual verification against primary literature."
+  - id: C18
+    text: "The Author Contributions statement is complete and verified."
+    claim_locations: [author_contributions]
+    evidence_type: author_attestation
+    required_sources: []
+    status: blocked
+    limitation: "Author contribution data was not provided."

@@ -1,0 +1,157 @@
+{
+  "files": [
+    {
+      "evidence_type": "public_representative_sample",
+      "generated_at_utc": "2026-08-31T18:03:57.276700Z",
+      "git_commit": "uncommitted",
+      "path": "README.md",
+      "sha256": "1976605898ac8fcfec4df3d23a16735f7c326be253ed976121b317959a9a6e7f",
+      "size_bytes": 835,
+      "source_command": "python experiments/reviewer_revision/generate_evidence_package.py"
+    },
+    {
+      "evidence_type": "public_representative_sample",
+      "generated_at_utc": "2026-08-31T18:03:57.276700Z",
+      "git_commit": "uncommitted",
+      "path": "baseline/http_sqlite_run.csv",
+      "sha256": "cc0533d60dce774af31683fae0d38635ea83ec70c3a525e4c7618be998d96048",
+      "size_bytes": 1074,
+      "source_command": "python experiments/reviewer_revision/generate_evidence_package.py"
+    },
+    {
+      "evidence_type": "public_representative_sample",
+      "generated_at_utc": "2026-08-31T18:03:57.276700Z",
+      "git_commit": "uncommitted",
+      "path": "besu/control_plane_run.csv",
+      "sha256": "0bd43791831dcd6464ffc459cbaccb8301e8b5d66d344094c7d20d3c6eebdd62",
+      "size_bytes": 2869,
+      "source_command": "python experiments/reviewer_revision/generate_evidence_package.py"
+    },
+    {
+      "evidence_type": "public_representative_sample",
+      "generated_at_utc": "2026-08-31T18:03:57.276700Z",
+      "git_commit": "uncommitted",
+      "path": "completeness/aggregation_cases.csv",
+      "sha256": "15290c85cd03af8280e754ec89a1e733d1cf3ae438e2b0d64562499c8b89ab47",
+      "size_bytes": 2137,
+      "source_command": "python experiments/reviewer_revision/generate_evidence_package.py"
+    },
+    {
+      "evidence_type": "public_representative_sample",
+      "generated_at_utc": "2026-08-31T18:03:57.276700Z",
+      "git_commit": "uncommitted",
+      "path": "completeness/selective_omission_denominator.json",
+      "sha256": "569456540ed182cea21b1d22d88e87d17fee34b6289a72d2a04225a547b4b32b",
+      "size_bytes": 1112,
+      "source_command": "python experiments/reviewer_revision/generate_evidence_package.py"
+    },
+    {
+      "evidence_type": "public_representative_sample",
+      "generated_at_utc": "2026-08-31T18:03:57.276700Z",
+      "git_commit": "uncommitted",
+      "path": "fleet/fleet_run.csv",
+      "sha256": "02e82e2eb6d5a636acb43acd72d8ba106dfaa5ba93ec60e428dae516e123a9ec",
+      "size_bytes": 674,
+      "source_command": "python experiments/reviewer_revision/generate_evidence_package.py"
+    },
+    {
+      "evidence_type": "public_representative_sample",
+      "generated_at_utc": "2026-08-31T18:03:57.276700Z",
+      "git_commit": "uncommitted",
+      "path": "fleet/receipts.jsonl",
+      "sha256": "739d796e2841c002b19fd10e71ac4f644ce2e8b014288c51529b81bc6d708ebb",
+      "size_bytes": 51283,
+      "source_command": "python experiments/reviewer_revision/generate_evidence_package.py"
+    },
+    {
+      "evidence_type": "public_representative_sample",
+      "generated_at_utc": "2026-08-31T18:03:57.276700Z",
+      "git_commit": "uncommitted",
+      "path": "gas/gas_examples.csv",
+      "sha256": "d904638e00aec7160b966ee180d71a5c507d22e335979f5b231101b0d9a33636",
+      "size_bytes": 817,
+      "source_command": "python experiments/reviewer_revision/generate_evidence_package.py"
+    },
+    {
+      "evidence_type": "public_representative_sample",
+      "generated_at_utc": "2026-08-31T18:03:57.276700Z",
+      "git_commit": "uncommitted",
+      "path": "validation/validation_report.json",
+      "sha256": "3746caf3adb95d189a1f9af5bc5513d84c5f5f9c452b379929d1feab3b4c3efa",
+      "size_bytes": 11368,
+      "source_command": "python experiments/reviewer_revision/generate_evidence_package.py"
+    }
+  ],
+  "generated_at_utc": "2026-08-31T18:03:57.276700Z",
+  "git_commit": "uncommitted",
+  "schema_version": 1,
+  "source_traceability": {
+    "contracts": {
+      "DeviceAttestationV2": {
+        "abi_sha256": "d6f8912ddcfdfed5777406be8bcad1c06d1c753f361e14ec42d9f5ba59273047",
+        "address": "0xb28548397128aF07D6d939b07B8d83EAC2068768",
+        "bytecode_match": "exact_including_metadata_and_bound_immutables",
+        "deployment_transaction": "0xb80812adff9a7d657dae6318a98c49878ceb513c7fd15b9ec1696de4246131c6",
+        "runtime_keccak256": "0xa75958036fbd22a0a921f4dcc28566fd04d6c905dbffcff158ddd5cf59ea206c",
+        "runtime_sha256": "362e3d7bb9f9dfbef51b3cdf32f24816b04bea72ad48eacc53434854b06ccdb7",
+        "storage_layout_sha256": "f8149826bc62065573b355c50290070dabe9969f9122aa6950b40c19182ddf8b"
+      },
+      "DeviceIdentityRegistryV2": {
+        "abi_sha256": "2006a43c171ced39817c84c7e4cfc98039ccfecd8693edabe38ca0c231764420",
+        "address": "0x64b005A70906169a369a45f1b33c554587304456",
+        "bytecode_match": "exact_including_metadata_and_bound_immutables",
+        "deployment_transaction": "0x9302cacb6d3d91e955030a47e045c306f30cb3dbb3e6909cb8f25c7b427ca5e9",
+        "runtime_keccak256": "0xc749b9824d903289d469697b4ddfaadc1ea1eaf84693fe6b1b2ffc1ac52ea9ed",
+        "runtime_sha256": "8bc9ec104bcb80a2cd85e8f09713095062746de6ce04da24f60a9a145c454dee",
+        "storage_layout_sha256": "0cb379f9f1214134715d2e5b8e0525aee31db551278aeb40f62c01586d885a44"
+      },
+      "DeviceReceiptVerifierV2": {
+        "abi_sha256": "9d445e296593feb6e68639ecbaa57cc35772c85ee3f64869597a525237f8814e",
+        "address": "0xB26C4eCb1DABB7B6e17778Ac50aFd850B719B3bD",
+        "bytecode_match": "exact_including_metadata_and_bound_immutables",
+        "deployment_transaction": "0x14f1eb6b8fb32ecf5bb45389683be4fb6cb022bea974685def14614c579652fd",
+        "runtime_keccak256": "0x3aa246cc5cef6d6962c6355dd65c10c63073192b1294f5c6b0ef3bebfa5df225",
+        "runtime_sha256": "ebf993f36418cfc3238921c1189b85b138058114750e6bceeb9d8244cbcfea17",
+        "storage_layout_sha256": "f846b023549275be2e0c1636ca4bec256cd67a0365c39781e76ec879398473a8"
+      },
+      "FirmwareRegistry": {
+        "abi_sha256": "8546bd49f8f2af66a227199e22982fb4c0a05cfdb9d02d0170260e77ea880109",
+        "address": "0x88B631D67b5b77D858A2cba52e2179F9a09eFd64",
+        "bytecode_match": "exact_including_metadata_and_bound_immutables",
+        "deployment_transaction": "0xe4efcee91b8aa6f8fa2759f7fbe8734b19616e80936b86d9b6b7775463c005ae",
+        "runtime_keccak256": "0x4cebef6208f4913a52e5228da75eb448e78439b8a9a6c5912361df393ea09519",
+        "runtime_sha256": "bb3b4970eba8385030a6bb4da650c6db68a0e291e4f2510232e8a06f3ada58a3",
+        "storage_layout_sha256": "89798b96ceb64d1510bf1bca1e095fd9debefb82bfbac61c86d897f0205a38f2"
+      },
+      "KeyManager": {
+        "abi_sha256": "0ac976fc9cdd01e99afdf82f7624a301a0cbb1b8ea0284c555ea926b576344f7",
+        "address": "0xe7141aECA709Ff634a2c859C3ad6D1B40DDD9212",
+        "bytecode_match": "exact_including_metadata_and_bound_immutables",
+        "deployment_transaction": "0x1d225bd21549ebb6398b9c4e557291cc6dd1686ed5ae74cc84d1fd58ef9b0ebd",
+        "runtime_keccak256": "0xdd80a08e10c9fa0715a57fce51047034efa3884af1f5217e4918abf0acab18c8",
+        "runtime_sha256": "b60d17bbd7180ba752ff1f1843ebcc0266cd890e7097a2c894fa59fa38cbf245",
+        "storage_layout_sha256": "08d8a65a3bf82a5f229c74cf1a9d4c0016739a582407e246344adc54dcd725e5"
+      },
+      "RolloutCoordinatorV2": {
+        "abi_sha256": "cfb7784aa7f1a937bf2699a707f1fecb59ec722defca7f0110d01da36592d084",
+        "address": "0xB573D68090CEa095eaDE0E8dd5F7bB1afc23BdC2",
+        "bytecode_match": "exact_including_metadata_and_bound_immutables",
+        "deployment_transaction": "0x76200a7e4de271f8384b9d1788dce6408e2f229518c8d29fce1092cf3b9112a7",
+        "runtime_keccak256": "0xa7882976bed7a0e10a896d9c85f8894128ee8b91cd8835cfdf413afb1bfe2b50",
+        "runtime_sha256": "57b179255fc8542b7ac096525efb3d902dd5cade3227308dcab5f135493eb91d",
+        "storage_layout_sha256": "72a801c5e76b741d3d2e4642ce712ff2d1d4366041533ca962bb9cda5367a712"
+      }
+    },
+    "fingerprint_capture_git_status": "PENDING",
+    "fingerprint_path": "results/reviewer_revision/validation/protocol_fingerprint.json",
+    "fingerprint_sha256": "338a1cdb57d8b1bf7a1f8573a56c221f566c851871e2f88863bafb0bf19ea961",
+    "git_commit_at_execution": null,
+    "git_freeze_status": "PENDING_NO_COMMIT",
+    "linked_timing_rows": 350,
+    "protocol_version": "V2",
+    "receipt_schema_version": "2",
+    "revision_commit": null,
+    "source_set_sha256": "b6b35066cd18c4532d351595564da0cecc8338f9f51084c29d0ee1486e7002a5",
+    "verification_type": "retrospective_exact_bytecode_and_historical_transaction_verification"
+  }
+}

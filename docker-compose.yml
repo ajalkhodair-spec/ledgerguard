@@ -1,0 +1,157 @@
+version: "3.8"
+
+services:
+  besu-node1:
+    image: ${BESU_IMAGE:-hyperledger/besu:25.12.0}
+    container_name: ledgerguard-besu-node1
+    volumes:
+      - ./network/Node-1/data:/opt/besu/data
+      - ./network/genesis.json:/opt/besu/genesis.json:ro
+    command:
+      - --data-path=/opt/besu/data
+      - --genesis-file=/opt/besu/genesis.json
+      - --profile=ENTERPRISE
+      - --rpc-http-enabled
+      - --rpc-http-host=0.0.0.0
+      - --rpc-http-port=8545
+      - --rpc-http-api=ETH,NET,WEB3,IBFT
+      - --host-allowlist=*
+      - --rpc-http-cors-origins=*
+      - --p2p-port=30303
+      - --p2p-host=172.28.0.11
+      - --min-gas-price=0
+      - --logging=INFO
+    ports:
+      - "8545:8545"
+      - "30303:30303"
+    networks:
+      ledgerguard:
+        ipv4_address: 172.28.0.11
+
+  besu-node2:
+    image: ${BESU_IMAGE:-hyperledger/besu:25.12.0}
+    container_name: ledgerguard-besu-node2
+    depends_on:
+      - besu-node1
+    volumes:
+      - ./network/Node-2/data:/opt/besu/data
+      - ./network/genesis.json:/opt/besu/genesis.json:ro
+    command:
+      - --data-path=/opt/besu/data
+      - --genesis-file=/opt/besu/genesis.json
+      - --profile=ENTERPRISE
+      - --bootnodes=${BOOTNODE_ENODE}
+      - --p2p-port=30304
+      - --p2p-host=172.28.0.12
+      - --min-gas-price=0
+      - --logging=INFO
+    networks:
+      ledgerguard:
+        ipv4_address: 172.28.0.12
+
+  besu-node3:
+    image: ${BESU_IMAGE:-hyperledger/besu:25.12.0}
+    container_name: ledgerguard-besu-node3
+    depends_on:
+      - besu-node1
+    volumes:
+      - ./network/Node-3/data:/opt/besu/data
+      - ./network/genesis.json:/opt/besu/genesis.json:ro
+    command:
+      - --data-path=/opt/besu/data
+      - --genesis-file=/opt/besu/genesis.json
+      - --profile=ENTERPRISE
+      - --bootnodes=${BOOTNODE_ENODE}
+      - --p2p-port=30305
+      - --p2p-host=172.28.0.13
+      - --min-gas-price=0
+      - --logging=INFO
+    networks:
+      ledgerguard:
+        ipv4_address: 172.28.0.13
+
+  besu-node4:
+    image: ${BESU_IMAGE:-hyperledger/besu:25.12.0}
+    container_name: ledgerguard-besu-node4
+    depends_on:
+      - besu-node1
+    volumes:
+      - ./network/Node-4/data:/opt/besu/data
+      - ./network/genesis.json:/opt/besu/genesis.json:ro
+    command:
+      - --data-path=/opt/besu/data
+      - --genesis-file=/opt/besu/genesis.json
+      - --profile=ENTERPRISE
+      - --bootnodes=${BOOTNODE_ENODE}
+      - --p2p-port=30306
+      - --p2p-host=172.28.0.14
+      - --min-gas-price=0
+      - --logging=INFO
+    networks:
+      ledgerguard:
+        ipv4_address: 172.28.0.14
+
+  ipfs:
+    image: ${IPFS_IMAGE:-ipfs/kubo:v0.39.0}
+    container_name: ledgerguard-ipfs
+    volumes:
+      - ./ipfs/data:/data/ipfs
+      - ./artifacts:/export:ro
+    environment:
+      - IPFS_PROFILE=server
+    ports:
+      - "5001:5001"
+      - "8080:8080"
+    networks:
+      - ledgerguard
+
+  gateway:
+    image: python:3.11-slim
+    container_name: ledgerguard-gateway
+    volumes:
+      - ./out:/app/out:ro
+    working_dir: /app
+    command: ["python", "-m", "http.server", "8088", "--directory", "/app/out"]
+    ports:
+      - "8088:8088"
+    networks:
+      - ledgerguard
+
+  foundry:
+    image: ${FOUNDRY_IMAGE:-ghcr.io/foundry-rs/foundry:latest}
+    container_name: ledgerguard-foundry
+    entrypoint: ["sh", "-lc"]
+    working_dir: /workspace
+    volumes:
+      - ./contracts:/workspace
+    networks:
+      - ledgerguard
+
+  sim:
+    image: python:3.11-slim
+    container_name: ledgerguard-sim
+    entrypoint: ["sh", "-lc"]
+    working_dir: /app
+    volumes:
+      - ./runner:/app
+      - ./out:/out
+    networks:
+      - ledgerguard
+
+  results:
+    image: python:3.11-slim
+    container_name: ledgerguard-results
+    entrypoint: ["sh", "-lc"]
+    working_dir: /app
+    volumes:
+      - ./results:/app
+      - ./out:/out
+    networks:
+      - ledgerguard
+
+networks:
+  ledgerguard:
+    name: ledgerguard
+    ipam:
+      config:
+        - subnet: 172.28.0.0/16

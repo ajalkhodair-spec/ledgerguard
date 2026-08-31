@@ -1,0 +1,12 @@
+change_id,reviewer_comment,original_section,original_text_summary,revised_section,proposed_revision,supporting_evidence,new_table,new_figure,status
+M01,R1-1/R2-3,Abstract,Unqualified evidence claims,Abstract,"Qualify local Besu, software fleet, analytical scaling, and not-run hardware evidence",claim_registry.yaml,,,PARTIAL
+M02,R2-1,Related work,DLT alternatives comparison,Related work,"Add only manually verified TUF, Uptane, and transparency-log comparison cells",manual primary-source review,comparative novelty table,,PARTIAL
+M03,R2-2,Threat model,Aggregator omission trust,Threat model,"Describe expected-cohort denominator, witness agreement, and residual collusion boundary",aggregation_completeness_tests.csv,,,READY
+M04,R1-2/R2-4,Experimental setup,Single block configuration,Experimental setup,Add repeated 1/2/4-second local Besu sensitivity and receipt polling definition,block_period_sensitivity_summary.csv,block-period table,block-period figure,READY
+M05,R1-3/R2-6,Statistical methods,Insufficient repetition details,Statistical methods,"Add n, dispersion, 10,000-resample bootstrap intervals, fixed seed, and exclusion policy",statistical_protocol.json,timing statistics table,,READY
+M06,R1-4/R2-5,Results,Weak centralized baseline,Results,Present matched local persistent-backend comparison and disclose DLT-only asymmetries,baseline_equivalence_matrix.csv,baseline comparison table,timing figure,READY
+M07,R1-5,Results,Formula-only accountability,Results,Separate executed path gas/database evidence from analytical fleet/batch scaling,accountability_status.json,accountability table,accountability figure,READY
+M08,R1-9/R2-7,Security evaluation,Limited adversarial validation,Security evaluation,"Add fuzz, invariant, coverage, Slither, replay, RPC race, and crash-fault evidence",validation_report.json,security gate table,validator-fault figure,READY
+M09,R1-M6,Results,Single-seed fleet interpretation,Results,Add twenty seeds per configuration and avoid unsupported monotonic scaling claims,fleet_multiseed_summary.csv,fleet statistics table,fleet figure,READY
+M10,R1-M8/R1-M9,Discussion and conclusion,Late or broad limitations,Scope and limitations,"State physical-device, HSM, PKI, WAN, Mythril, and production limitations before the conclusion",claim_registry.yaml,,,PARTIAL
+M11,R2-10,Author Contributions,Missing author roles,Author Contributions,Populate author-verified contribution roles,author input required,,,BLOCKED

@@ -1,0 +1,67 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# macOS / editor files
+.DS_Store
+*.swp
+*.swo
+.idea/
+.vscode/
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Solidity / Foundry build artifacts
+contracts/out/
+contracts/cache/
+contracts/broadcast/
+
+# Generated Besu, IPFS, firmware, and experiment artifacts
+network/
+ipfs/data/
+artifacts/
+out/
+.q1_suite_build/
+results/raw/**
+results/csv/**
+results/figures/**
+results/workbook/**
+results/validation/**
+results/security/**
+results/archive/**
+results/reviewer_revision/**
+paper_assets/tables/**
+paper_assets/figures/**
+paper_assets/text_insertions/**
+paper_assets/reviewer_revision/figures/*.png
+!results/raw/.gitkeep
+!results/csv/.gitkeep
+!results/figures/.gitkeep
+!results/workbook/.gitkeep
+!results/validation/.gitkeep
+!results/security/.gitkeep
+!results/archive/.gitkeep
+!paper_assets/tables/.gitkeep
+!paper_assets/figures/.gitkeep
+!paper_assets/text_insertions/.gitkeep
+
+# Compact, sanitized evidence intended for public review
+!results_sample/
+!results_sample/**
+
+# Full evidence bundle is generated locally and attached to releases
+release/**
+!release/README.md
+
+# Logs and temporary files
+*.log
+tmp/
+temp/

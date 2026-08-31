@@ -1,0 +1,15 @@
+topologies:
+  local_4_validators:
+    validator_count: 4
+    mode: docker_compose_local
+    enabled_by_default: true
+  distributed_4_validators:
+    validator_count: 4
+    mode: docker_context_or_remote_hosts
+    enabled_by_default: false
+    required_env: [LEDGERGUARD_DISTRIBUTED_HOSTS]
+  distributed_7_validators:
+    validator_count: 7
+    mode: docker_context_or_remote_hosts
+    enabled_by_default: false
+    required_env: [LEDGERGUARD_DISTRIBUTED_HOSTS]

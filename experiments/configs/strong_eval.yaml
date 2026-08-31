@@ -1,0 +1,46 @@
+# LedgerGuard strong evaluation configuration.
+# Values in this file define requested runs. Individual runners must record
+# whether each requested run was measured, scenario-only, skipped, or not_run.
+
+suite_name: strong_eval
+repetitions: 50
+repetitions_governance: 50
+repetitions_baseline: 50
+network_repetitions_per_profile: 20
+cache_trials_per_mode: 10
+cache_requests_per_trial: 1000
+validator_fault_trials: 5
+dedicated_fuzz_runs: 10000
+fleet_sizes: [100, 500, 1000]
+optional_fleet_sizes: [5000]
+failure_rates: [0.01, 0.02, 0.05]
+batch_sizes: [25, 50, 100, 200]
+default_batch_size: 50
+cache_modes: [OFF, ON]
+artifact_size_bytes: actual_generated_artifact_size
+network_profiles:
+  P1:
+    application_delay_ms: 20
+    read_rate_limit_mbps: 5
+  P2:
+    application_delay_ms: 80
+    read_rate_limit_mbps: 5
+  P3:
+    application_delay_ms: 200
+    read_rate_limit_mbps: 0.256
+seeds:
+  timing: [1101, 1102, 1103, 1104, 1105, 1106, 1107, 1108, 1109, 1110, 1111, 1112, 1113, 1114, 1115, 1116, 1117, 1118, 1119, 1120, 1121, 1122, 1123, 1124, 1125, 1126, 1127, 1128, 1129, 1130]
+  fleet: [2101, 2102, 2103, 2104, 2105, 2106, 2107, 2108, 2109, 2110, 2111, 2112, 2113, 2114, 2115, 2116, 2117, 2118, 2119, 2120]
+  adversarial: [3101, 3102, 3103]
+random_seeds: [1101, 1102, 1103, 1104, 1105, 2101, 2102, 3101, 3102, 3103]
+output:
+  root: results
+  archive_existing: true
+  require_raw_evidence: true
+  validation_required: true
+claims_policy:
+  no_fabricated_results: true
+  measured_requires_raw_logs: true
+  hardware_requires_hil_logs: true
+  network_execution_requires_explicit_shaping_layer: true
+  storage_growth_requires_gas_or_database_evidence: true

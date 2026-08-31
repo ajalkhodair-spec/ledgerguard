@@ -1,0 +1,295 @@
+{
+  "checks": {
+    "accountability": {
+      "analytical_rows": 36,
+      "contract_deployment_gas": {
+        "naive_per_device": 408970,
+        "v1_integrity_root": 338894,
+        "v2_complete_witnessed": 1472881
+      },
+      "failed_transactions": 0,
+      "generated_at_utc": "2026-08-29T14:34:25.089834Z",
+      "logical_paths": 150,
+      "measured_transactions": 250,
+      "path_gas_statistics": {
+        "naive_per_device": {
+          "evidence_type": "local_besu_measurement",
+          "gas_iqr": "0.000",
+          "gas_max": 186345,
+          "gas_mean": "169587.000",
+          "gas_median": "169245.000",
+          "gas_min": 169245,
+          "gas_q1": "169245.000",
+          "gas_q3": "169245.000",
+          "gas_sample_stddev": "2418.305",
+          "latency_median_seconds": "3.268637500",
+          "latency_p95_seconds": "3.346354000",
+          "reporting_mode": "naive_per_device",
+          "sample_count": 50,
+          "status": "PASS"
+        },
+        "v1_integrity_root": {
+          "evidence_type": "local_besu_measurement",
+          "gas_iqr": "0.000",
+          "gas_max": 97836,
+          "gas_mean": "97835.760",
+          "gas_median": "97836.000",
+          "gas_min": 97824,
+          "gas_q1": "97836.000",
+          "gas_q3": "97836.000",
+          "gas_sample_stddev": "1.697",
+          "latency_median_seconds": "1.842593000",
+          "latency_p95_seconds": "3.170681900",
+          "reporting_mode": "v1_integrity_root",
+          "sample_count": 50,
+          "status": "PASS"
+        },
+        "v2_complete_witnessed": {
+          "evidence_type": "local_besu_measurement",
+          "gas_iqr": "0.000",
+          "gas_max": 434143,
+          "gas_mean": "434139.640",
+          "gas_median": "434143.000",
+          "gas_min": 434119,
+          "gas_q1": "434143.000",
+          "gas_q3": "434143.000",
+          "gas_sample_stddev": "8.412",
+          "latency_median_seconds": "8.210091500",
+          "latency_p95_seconds": "10.498990050",
+          "reporting_mode": "v2_complete_witnessed",
+          "sample_count": 50,
+          "status": "PASS"
+        }
+      },
+      "samples_per_logical_path": 50,
+      "scaling_rows_are_analytical": true,
+      "significance_tests_applied_to_formula_rows": false,
+      "status": "PASS",
+      "storage_formulas_include_shared_mapping_or_array_slot": true,
+      "storage_layout_incremental_bytes": {
+        "naive_per_device": 192,
+        "v1_integrity_root": 64,
+        "v2_complete_witnessed": 384
+      },
+      "v1_integrity_only_comparator_included": true,
+      "v2_cost_uses_per_run_transaction_totals": true,
+      "validator_database_delta_is_observed_run_delta_not_contract_state_size": true
+    },
+    "besu_timing": {
+      "rows": 350,
+      "unique_transaction_hashes": 350
+    },
+    "block_period": {
+      "block_period_median_latency_pearson_correlation": 0.9999882426487424,
+      "bootstrap_resamples": 10000,
+      "bootstrap_seed": 20260828,
+      "excluded_evidence": "results/reviewer_revision/raw/block_period/block_period_1s_excluded_native_stall",
+      "excluded_invalid_environment_rows": 30,
+      "failed_transactions": 0,
+      "profiles": 3,
+      "rows": 90,
+      "significance_test": "not_applied_three_deterministic_configurations",
+      "slow_valid_observations_removed": 0,
+      "status": "PASS",
+      "valid_transactions": 90
+    },
+    "cache": {
+      "attempted_requests": 20000,
+      "cache_modes": [
+        "OFF",
+        "ON"
+      ],
+      "failed_requests": 0,
+      "generated_at_utc": "2026-08-29T17:50:15.691082Z",
+      "independent_trials_per_mode": 10,
+      "origin": "local_ipfs_gateway",
+      "physical_device_used": false,
+      "raw_requests": 20000,
+      "requests_per_trial": 1000,
+      "status": "PASS",
+      "summary_rows": 2
+    },
+    "claim_registry": {
+      "claim_count": 18,
+      "counts": {
+        "blocked": 4,
+        "partial": 1,
+        "supported": 13
+      },
+      "errors": [],
+      "status": "PASS",
+      "unsupported_claims_excluded_from_final_text": true
+    },
+    "completeness": {
+      "cases": 9,
+      "failed": 0
+    },
+    "concurrency": {
+      "all_pairs_in_same_block": true,
+      "cases": 25,
+      "competing_transactions": 50,
+      "csv": "results/reviewer_revision/csv/concurrency_and_replay_tests.csv",
+      "failed_invariants": 0,
+      "generated_at_utc": "2026-08-29T08:51:22.321547Z",
+      "parallel_rpc": true,
+      "primary_concurrency_evidence": "mined_receipt_status_transaction_order_and_final_contract_state",
+      "private_keys_written_to_evidence": false,
+      "raw": "results/reviewer_revision/raw/concurrency/rpc_races.jsonl",
+      "required_schema_complete": true,
+      "revert_reason_is_exact_intermediate_state_reconstruction": false,
+      "revert_reason_probe_method": "historical_eth_call_at_containing_block_post_state",
+      "revert_reasons_recovered_by_historical_eth_call": 25,
+      "status": "PASS",
+      "trials": 5
+    },
+    "fleet_and_merkle": {
+      "all_feasible_roots_rebuilt": true,
+      "runs": 180,
+      "verified_signed_receipts": 96000
+    },
+    "foundry_security": {
+      "coverage": {
+        "branch_percent": 26.13,
+        "function_percent": 100.0,
+        "instrumentation": "viaIR minimum optimization; source-mapping warning retained",
+        "lcov_report": "results/reviewer_revision/raw/security/foundry_coverage_final.info",
+        "line_percent": 99.04,
+        "raw_report": "results/reviewer_revision/raw/security/foundry_coverage_final.txt",
+        "statement_percent": 98.03
+      },
+      "coverage_exact_command": "forge coverage --root contracts --offline --use <SOLC_0.8.24_BINARY> --ir-minimum --report summary --report lcov --report-file results/reviewer_revision/raw/security/foundry_coverage_final.info",
+      "dedicated_fuzz_runs": 10000,
+      "exact_command": "forge test --root contracts --offline --use <SOLC_0.8.24_BINARY> -vv",
+      "exit_code": 0,
+      "fail_on_revert": false,
+      "foundry_version": "forge Version: 1.5.1-stable\nCommit SHA: b0a9dd9ceda36f63e2326ce530c10e6916f4b8a2\nBuild Timestamp: 2025-12-22T11:41:09.812070000Z (1766403669)\nBuild Profile: maxperf",
+      "fuzz_seed": "0x4c656467657247756172642d56322d66757a7a2d323032362d30382d3239",
+      "generated_at_utc": "2026-08-31T09:16:40.561941Z",
+      "handler_contracts": [
+        "V2InvariantHandler"
+      ],
+      "invariant_calls": 128000,
+      "invariant_depth": 500,
+      "invariant_reverts": 0,
+      "invariant_runs": 256,
+      "invariant_seed": "0x4c656467657247756172642d56322d66757a7a2d323032362d30382d3239",
+      "raw_report": "results/reviewer_revision/raw/security/foundry_final.txt",
+      "seed_scope": "Foundry shared fuzz seed from profile.default.fuzz.seed",
+      "status": "PASS",
+      "target_selectors": [
+        "createAndFinalize(uint16,uint16,bytes32)"
+      ],
+      "test_count": 62,
+      "test_seed": "0x4c656467657247756172642d56322d66757a7a2d323032362d30382d3239"
+    },
+    "gas": {
+      "deployment_contracts": 8,
+      "operation_types": 11
+    },
+    "http_sqlite_timing": {
+      "rows": 350
+    },
+    "independent_witness": {
+      "cases": 6,
+      "common_omission_or_collusion_eliminated": false,
+      "failed_cases": [],
+      "journal_population": "each device-produced authenticated receipt is appended independently; neither journal is copied from the other",
+      "physical_devices_used": false,
+      "separate_process_reconstruction": true,
+      "separate_receipt_journals": true,
+      "software_device_dual_delivery": true,
+      "status": "PASS",
+      "terminal_outcome_root_covers_expected_cohort": true,
+      "witness_input_obtained_from_aggregator": false
+    },
+    "network": {
+      "attempted_fetches": 60,
+      "failed_fetches": 0,
+      "generated_at_utc": "2026-08-29T17:50:15.687772Z",
+      "os_netem_used": false,
+      "profiles": 3,
+      "raw_fetches": 60,
+      "repetitions_per_profile": 20,
+      "status": "PASS",
+      "summary_rows": 3,
+      "terminology": "configured_application_delay_and_read_rate_limit",
+      "traffic_control_layer": "application",
+      "wan_or_production_claim_supported": false
+    },
+    "protocol_compatibility": {
+      "cases": 5
+    },
+    "receipt_size": {
+      "aggregate_signed_receipt_set_reported": true,
+      "aggregate_terminal_set_reported": true,
+      "canonical_terminal_record_reported": true,
+      "encoding": "canonical compact sorted-key UTF-8 JSON",
+      "per_receipt_and_aggregate_columns_separate": true,
+      "receipt_hash_bytes": 32,
+      "runs": 180,
+      "signature_bytes": 65,
+      "signature_included": true,
+      "status": "PASS",
+      "terminal_leaf_hash_bytes": 32,
+      "unsigned_payload_reported": true,
+      "variable_length_fields_measured_from_each_preserved_receipt": true
+    },
+    "static_analysis": {
+      "analyzer": "slither",
+      "analyzer_version": "0.11.6",
+      "conclusion": "No unmitigated high-severity Slither finding remained after manual triage.",
+      "configuration": "Foundry project; Solidity 0.8.24; default Slither detector set",
+      "contracts_analyzed": 9,
+      "detector_results": 15,
+      "detectors_available": 102,
+      "detectors_suppressed": [],
+      "exact_command": "slither . --foundry-out-directory out --json ../results/reviewer_revision/raw/security/slither_final.json",
+      "findings_suppressed": [],
+      "high_impact": 0,
+      "informational": 1,
+      "low_impact": 13,
+      "manual_triage_completed": true,
+      "medium_impact": 1,
+      "raw_json": "results/reviewer_revision/raw/security/slither_final.json",
+      "raw_report_sha256": "43243ab520c9d775371d01e2f58303a9e3d9e738a2819372dadaf04c69a177b6",
+      "raw_text": "results/reviewer_revision/raw/security/slither_final.txt",
+      "status": "completed_with_reviewed_findings",
+      "suppression_rationale": "none; every emitted finding is retained and manually triaged",
+      "triage": "results/reviewer_revision/validation/slither_triage.md",
+      "triage_csv": "results/reviewer_revision/validation/slither_triage.csv",
+      "triaged_findings": 15,
+      "unmitigated_high_severity": 0,
+      "working_directory": "contracts"
+    },
+    "validator_crash_faults": {
+      "byzantine_fault_injection": false,
+      "cases": 20,
+      "failed_cases": 0,
+      "fault_type": "validator_process_crash",
+      "four_validator_ibft_expected_fault_tolerance": 1,
+      "generated_at_utc": "2026-08-29T19:39:46.815398Z",
+      "quorum_restoration_tested": true,
+      "rows": 20,
+      "status": "PASS",
+      "successful_restoration_trials": 5,
+      "trials": 5
+    }
+  },
+  "error_count": 0,
+  "errors": [],
+  "evidence_boundaries": {
+    "accountability_scaling": "analytical_using_solidity_layout_and_local_path_gas_median",
+    "baseline": "local_persistent_backend_measurement",
+    "besu": "local_besu_measurement",
+    "cache": "executed_local_ipfs_edge_cache",
+    "control_plane_timing": "local_besu_measurement_final_v2_abi",
+    "current_terminal_root_accountability": "local_besu_measurement_current_abi",
+    "fleet": "authenticated_software_emulation",
+    "governance_gas_summary": "local_besu_measurement_final_v2_abi",
+    "hil": "not_run",
+    "mythril": "not_run",
+    "network": "application_shaped_local_ipfs_fetch",
+    "physical_devices": "not_run"
+  },
+  "status": "PASS"
+}

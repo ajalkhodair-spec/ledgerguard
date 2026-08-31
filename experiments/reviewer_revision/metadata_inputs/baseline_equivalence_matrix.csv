@@ -1,0 +1,12 @@
+semantic_property,besu_ledgerguard_v2,http_sqlite_v2,comparability,comparison_treatment,evidence
+Authenticated actor,Transaction signature,Bearer token hashed in actor registry,Yes,Common application semantic,contracts/src/KeyManager.sol;experiments/reviewer_revision/baseline/schema.sql
+Role authorization,Active on-chain role,Active persistent actor role,Yes,Common application semantic,contracts/src/KeyManager.sol;experiments/reviewer_revision/baseline/http_sqlite_controller.py
+Persistent state,Besu world state,SQLite WAL database,Yes,Common application semantic,results/reviewer_revision/raw/besu_v2/;results/reviewer_revision/raw/baseline/http_sqlite_v2.sqlite
+Threshold approval,Two distinct eligible roles,Two distinct eligible roles,Yes,Direct operation timing allowed,contracts/src/FirmwareRegistry.sol;experiments/reviewer_revision/baseline/http_sqlite_controller.py
+Append-only audit record,Ledger transactions and events,Hash-chained table with update/delete triggers,Partial,Compare reconstruction function but disclose different trust model,experiments/reviewer_revision/baseline/schema.sql
+Rollout-state validation,Phase plus transition nonce,Phase plus transition nonce,Yes,Common application semantic,contracts/src/RolloutCoordinatorV2.sol;experiments/reviewer_revision/baseline/http_sqlite_controller.py
+Kill-switch action,Security or regulator role,Security or regulator role,Yes,Common application semantic,contracts/src/FirmwareRegistry.sol;experiments/reviewer_revision/baseline/http_sqlite_controller.py
+Outcome-root persistence,Sequential cohort epoch plus witness,Sequential summary plus witness,Yes,Common application semantic,contracts/src/DeviceAttestationV2.sol;experiments/reviewer_revision/baseline/schema.sql
+Audit reconstruction,Transaction/event query,Hash-chain verification query,Partial,Do not directly compare timing without matched Besu readback,experiments/reviewer_revision/baseline/http_sqlite_controller.py
+Multi-party consensus,Yes,No,Not applicable,DLT-specific property excluded from direct comparison,network/genesis.json
+Tamper-evident replicated history,Yes,No,Not applicable,DLT-specific property excluded from direct comparison,network/genesis.json

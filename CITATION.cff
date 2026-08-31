@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use LedgerGuard or its evaluation artifacts, cite this software."
+title: "LedgerGuard: Permissioned-Ledger Firmware Governance Research PoC"
+type: software
+authors:
+  - family-names: Alkhodair
+    given-names: Ahmad
+version: 2.0.0-poc
+date-released: 2026-08-29
+license: Apache-2.0
+repository-code: "https://github.com/ahmadalkhodair/ledgerguard"
+keywords:
+  - firmware updates
+  - permissioned ledger
+  - Hyperledger Besu
+  - software supply chain
+  - Merkle accountability

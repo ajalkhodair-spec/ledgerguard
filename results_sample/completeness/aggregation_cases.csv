@@ -1,0 +1,10 @@
+test_id,expected_behavior,observed_behavior,evidence_type,status,raw_evidence_path
+complete_expected_cohort,All ten authenticated terminal receipts reconcile the expected cohort.,"received=10, missing=0",software_emulation,passed,results/reviewer_revision/raw/completeness/complete_expected_cohort.json
+merkle_proof_validation,All feasible receipt proofs verify; altered leaves and paths fail; input order is canonicalized.,"proofs=10, altered_leaf_rejected=True, altered_path_rejected=True",software_emulation,passed,results/reviewer_revision/raw/completeness/merkle_proof_validation.json
+selective_omission_denominator,Omitted failed devices remain missing and cannot reduce the success denominator.,"success=8, expected=10, missing=2, rate=0.8",software_emulation,passed,results/reviewer_revision/raw/completeness/selective_omission_denominator.json
+tampered_signed_receipt,Altered signed fields are rejected.,receipt signer is inactive or does not match device,software_emulation,passed,results/reviewer_revision/raw/completeness/tampered_signed_receipt.json
+cross_chain_replay,Receipt signed for another chain is rejected.,receipt signer is inactive or does not match device,software_emulation,passed,results/reviewer_revision/raw/completeness/cross_chain_replay.json
+cross_contract_replay,Receipt signed for another verifier is rejected.,receipt signer is inactive or does not match device,software_emulation,passed,results/reviewer_revision/raw/completeness/cross_contract_replay.json
+duplicate_device_receipt,A device contributes at most one terminal receipt.,duplicate terminal receipt for device,software_emulation,passed,results/reviewer_revision/raw/completeness/duplicate_device_receipt.json
+revoked_device_signer,A revoked device signer is rejected.,receipt signer is inactive or does not match device,software_emulation,passed,results/reviewer_revision/raw/completeness/revoked_device_signer.json
+aggregator_witness_mismatch,A witness summary with different counters is rejected.,aggregator and witness summaries differ,software_emulation,passed,results/reviewer_revision/raw/completeness/aggregator_witness_mismatch.json

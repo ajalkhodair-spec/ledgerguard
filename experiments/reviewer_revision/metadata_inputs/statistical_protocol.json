@@ -1,0 +1,34 @@
+{
+  "bootstrap_resamples": 10000,
+  "bootstrap_seed": 20260828,
+  "comparison_label": "local persistent-backend comparison",
+  "exclusion_reasons": [
+    "container_crash",
+    "corrupted_log",
+    "incomplete_environment_startup",
+    "invalid_configuration",
+    "interrupted_execution"
+  ],
+  "formula_significance_tests_allowed": false,
+  "outlier_removal": "none_automatic",
+  "p95_minimum_n": 50,
+  "preserve_failed_observations": true,
+  "protocol_status": "frozen_before_full_aggregation",
+  "rerun_replaces_original": false,
+  "timing_statistics": [
+    "count",
+    "minimum",
+    "q1",
+    "median",
+    "q3",
+    "maximum",
+    "iqr",
+    "mean",
+    "sample_standard_deviation",
+    "coefficient_of_variation",
+    "p90",
+    "p95_when_n_gte_50",
+    "bootstrap_95ci_median",
+    "bootstrap_95ci_mean"
+  ]
+}

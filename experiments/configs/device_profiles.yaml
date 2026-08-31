@@ -1,0 +1,13 @@
+device_profiles:
+  simulated_m4:
+    type: simulator
+    device_type: M4
+    hardware: false
+  linux_sbc:
+    type: linux_agent
+    hardware: optional
+    required_env: [LEDGERGUARD_HIL_DEVICE_CONFIG]
+  mcu_mcuboot:
+    type: mcu_hook
+    hardware: optional
+    required_env: [LEDGERGUARD_MCU_HIL_CONFIG]

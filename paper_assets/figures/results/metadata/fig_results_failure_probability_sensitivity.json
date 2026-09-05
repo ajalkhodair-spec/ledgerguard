@@ -1,0 +1,98 @@
+{
+  "aggregation_method": "Outcome count divided by expected cohort; mean and 10,000-resample bootstrap 95% confidence interval",
+  "bootstrap_seed": 20260828,
+  "evidence_class": "authenticated software-device execution",
+  "excluded_row_count": 0,
+  "figure_semantic_name": "fig_results_failure_probability_sensitivity",
+  "filters": {
+    "cohort_size": 500,
+    "outcomes": [
+      "SUCCESS",
+      "ROLLBACK",
+      "FAIL"
+    ]
+  },
+  "generated_timestamp": "2026-09-02T17:00:36.751032+00:00",
+  "git_commit": "ede536f15ae826e78af88f5ac6b2f7b29ddff069",
+  "manuscript_label": "fig:failure-probability-sensitivity",
+  "maximum": 98.99,
+  "median": 1.5,
+  "minimum": 0.32999999999999996,
+  "output_files": [
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_failure_probability_sensitivity_a.pdf",
+      "sha256": "8458afb5e2dbaacbab741c073b0f296f6268624f6af014d118ddff95f36c8cb5"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_failure_probability_sensitivity_a.svg",
+      "sha256": "51f0e51c99355179c5d3076a5be6db8f0561f775a5fe57a6c907fd93434d2811"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_failure_probability_sensitivity_a.png",
+      "sha256": "efb0dcc23807c89d248ee712b385afc7cfd25f62157d378bcf7036817af2b91a"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_failure_probability_sensitivity_b.pdf",
+      "sha256": "779949da37eaadb2ab58e0e449272db7150b4e2a565ce02284911d115a3d3405"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_failure_probability_sensitivity_b.svg",
+      "sha256": "2e7f517082e79a26de807ae90cf717f7bf008db767eb9083967bc656745e6840"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_failure_probability_sensitivity_b.png",
+      "sha256": "b4c021e215c37d69e0a30c3d0c6325f0e38a11dbd7572bbc0c7208f06d1aaf43"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_failure_probability_sensitivity_c.pdf",
+      "sha256": "91ba10278a1825a6b9757207e6286bfa2bc7883ef764bc1dbdeb1cd87c8d1111"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_failure_probability_sensitivity_c.svg",
+      "sha256": "9611e0c82f2f3fb96b417ea392509f48b15ba7e08804038754b80a21ecf73727"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_failure_probability_sensitivity_c.png",
+      "sha256": "d79c76e156be193a8aaa8a2d3262851d6800acba49c822596dca5ef9a6653c88"
+    },
+    {
+      "path": "paper_assets/figures/results/fig_results_failure_probability_sensitivity.pdf",
+      "sha256": "9ba9e5be5789eb48d0074652b23ade6ee543f517bccab45f640b48349354e1e9"
+    },
+    {
+      "path": "paper_assets/figures/results/fig_results_failure_probability_sensitivity.svg",
+      "sha256": "57ceec2ed96595d0f68851b697dfc245f8cefb3664402ca249837b980ea0513f"
+    },
+    {
+      "path": "paper_assets/figures/results/fig_results_failure_probability_sensitivity.png",
+      "sha256": "d2df0febfb9943659f73a5bbed77a4611be419c8d82fba3ae21ba9926774423f"
+    }
+  ],
+  "plotting_script_path": "experiments/analysis/make_results_figures.py",
+  "plotting_script_sha256": "f665e45f8ab05719eab948a5e0a0523e3bb396ee14030ae8dad8fe91e21d2569",
+  "row_count": 60,
+  "selected_font": "Times New Roman",
+  "source_columns": [
+    "cohort_size_software_identities",
+    "configured_failure_probability",
+    "outcome",
+    "seed_count",
+    "mean_outcome_share_percent",
+    "bootstrap_95_ci_low_percent",
+    "bootstrap_95_ci_high_percent"
+  ],
+  "source_csv_paths": [
+    "results/reviewer_revision/csv/fleet_multiseed_runs.csv"
+  ],
+  "source_csv_sha256": {
+    "results/reviewer_revision/csv/fleet_multiseed_runs.csv": "60edd502d833abd5bc29a18dc0fee2269286fb52ca4925b075093635f24f00d5"
+  },
+  "source_worksheet_names": [
+    "Fleet Outcomes",
+    "Fleet Runs"
+  ],
+  "validation_report": "paper_assets/figures/results/figure_validation_report.md",
+  "validation_status": "PASS",
+  "workbook_filename": "LedgerGuard_Comprehensive_Results.xlsx",
+  "workbook_sha256": "4d65d5085065a4baa364e3f83bb5d2b86519ee3195c516f34e098ad0e424d7a4"
+}

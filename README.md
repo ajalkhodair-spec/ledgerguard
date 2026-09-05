@@ -124,6 +124,12 @@ Use `--resume` only to continue a deliberately interrupted full run. The complet
 
 `results_sample/` contains one successful Besu control-plane run, one HTTP/SQLite comparison run, one authenticated fleet run with signed receipts, all completeness cases, the selective-omission evidence, representative gas rows, and the consolidated validation report.
 
+Publication-ready Results figures, their plot-level CSV data, provenance metadata,
+and LaTeX integration are maintained in
+[`paper_assets/figures/results/`](paper_assets/figures/results/). The comprehensive
+workbook and full evidence archive are generated release assets rather than Git
+source files.
+
 Validate it with:
 
 ```bash
@@ -153,3 +159,7 @@ The public-safety gate scans tracked and non-ignored untracked files for private
 ## License and Citation
 
 LedgerGuard is licensed under Apache-2.0. Citation metadata is provided in [CITATION.cff](CITATION.cff).
+
+The software is versioned as a research PoC. After a tagged GitHub release is
+archived by Zenodo, cite the version DOI for exact reproducibility and use the
+Zenodo concept DOI when referring to LedgerGuard across releases.

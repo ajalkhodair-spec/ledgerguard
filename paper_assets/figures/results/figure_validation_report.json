@@ -1,0 +1,1880 @@
+{
+  "checks": [
+    {
+      "check": "R1 row count",
+      "detail": "observed=90, expected=90",
+      "status": "PASS"
+    },
+    {
+      "check": "R1 profile counts",
+      "detail": "{1: 30, 2: 30, 4: 30}",
+      "status": "PASS"
+    },
+    {
+      "check": "R1 retained long observation",
+      "detail": "maximum=31.031609",
+      "status": "PASS"
+    },
+    {
+      "check": "R1 no excluded observations",
+      "detail": "all valid observations are in plot data",
+      "status": "PASS"
+    },
+    {
+      "check": "R1 median 1s",
+      "detail": "recomputed=1.046551500",
+      "status": "PASS"
+    },
+    {
+      "check": "R1 median 2s",
+      "detail": "recomputed=2.033573500",
+      "status": "PASS"
+    },
+    {
+      "check": "R1 median 4s",
+      "detail": "recomputed=4.046854000",
+      "status": "PASS"
+    },
+    {
+      "check": "R1 logarithmic axis visible",
+      "detail": "axis label contains log scale",
+      "status": "PASS"
+    },
+    {
+      "check": "R2 total runs",
+      "detail": "observed=180",
+      "status": "PASS"
+    },
+    {
+      "check": "R2 configurations",
+      "detail": "{(100, 0.01): 20, (100, 0.02): 20, (100, 0.05): 20, (500, 0.01): 20, (500, 0.02): 20, (500, 0.05): 20, (1000, 0.01): 20, (1000, 0.02): 20, (1000, 0.05): 20}",
+      "status": "PASS"
+    },
+    {
+      "check": "R2 plot points",
+      "detail": "observed=9",
+      "status": "PASS"
+    },
+    {
+      "check": "R2 means and bootstrap intervals",
+      "detail": "plot data independently reproduces all nine mean/CI triplets",
+      "status": "PASS"
+    },
+    {
+      "check": "R3 cohort filter",
+      "detail": "rows=60",
+      "status": "PASS"
+    },
+    {
+      "check": "R3 outcomes separate",
+      "detail": "['FAIL', 'ROLLBACK', 'SUCCESS']",
+      "status": "PASS"
+    },
+    {
+      "check": "R3 point count",
+      "detail": "observed=9",
+      "status": "PASS"
+    },
+    {
+      "check": "R3 means and bootstrap intervals",
+      "detail": "SUCCESS, ROLLBACK, and FAIL independently reproduce raw counts",
+      "status": "PASS"
+    },
+    {
+      "check": "R3 rollback not derived as one minus success",
+      "detail": "raw rollback and fail fields are distinct and nonzero",
+      "status": "PASS"
+    },
+    {
+      "check": "R4 rows",
+      "detail": "observed=60",
+      "status": "PASS"
+    },
+    {
+      "check": "R4 profile counts",
+      "detail": "{'P1': 20, 'P2': 20, 'P3': 20}",
+      "status": "PASS"
+    },
+    {
+      "check": "R4 artifact size",
+      "detail": "artifact_size_bytes=537088",
+      "status": "PASS"
+    },
+    {
+      "check": "R4 retained maximum",
+      "detail": "maximum=915.736736",
+      "status": "PASS"
+    },
+    {
+      "check": "R4 no excluded observations",
+      "detail": "all completed observations are in plot data",
+      "status": "PASS"
+    },
+    {
+      "check": "R4 logarithmic axis visible",
+      "detail": "axis label contains log scale",
+      "status": "PASS"
+    },
+    {
+      "check": "R5 trials",
+      "detail": "OFF=10, ON=10",
+      "status": "PASS"
+    },
+    {
+      "check": "R5 requests per trial",
+      "detail": "all trials contain 1000 requests",
+      "status": "PASS"
+    },
+    {
+      "check": "R5 origin requests",
+      "detail": "{'OFF': 1000.0, 'ON': 1.0}",
+      "status": "PASS"
+    },
+    {
+      "check": "R5 cache hits",
+      "detail": "ON median=999.0",
+      "status": "PASS"
+    },
+    {
+      "check": "R5 origin bytes",
+      "detail": "{'OFF': 537088000.0, 'ON': 537088.0}",
+      "status": "PASS"
+    },
+    {
+      "check": "R5 integrity",
+      "detail": "integrity_failures=0",
+      "status": "PASS"
+    },
+    {
+      "check": "R5 origin terminology",
+      "detail": "visible label uses origin-side transfer",
+      "status": "PASS"
+    },
+    {
+      "check": "R6 grid",
+      "detail": "rows=24",
+      "status": "PASS"
+    },
+    {
+      "check": "R6 plotted approaches",
+      "detail": "two aggregation approaches",
+      "status": "PASS"
+    },
+    {
+      "check": "R6 executed gas medians",
+      "detail": "{'naive_per_device': 169245, 'v1_integrity_root': 97836, 'v2_complete_witnessed': 434143}",
+      "status": "PASS"
+    },
+    {
+      "check": "R6 N500 B50 transactions",
+      "detail": "{'naive_per_device': 500, 'v1_integrity_root': 10, 'v2_complete_witnessed': 30}",
+      "status": "PASS"
+    },
+    {
+      "check": "R6 transaction reductions",
+      "detail": "integrity-only=98%, complete-cohort witnessed=94%",
+      "status": "PASS"
+    },
+    {
+      "check": "R6 baseline omitted",
+      "detail": "per-device reporting used only as denominator",
+      "status": "PASS"
+    },
+    {
+      "check": "R7 rows and trials",
+      "detail": "rows=20",
+      "status": "PASS"
+    },
+    {
+      "check": "R7 phase counts",
+      "detail": "{'zero_validators_stopped': 5, 'one_validator_stopped': 5, 'two_validators_stopped': 5, 'quorum_restored_after_validator_restart': 5}",
+      "status": "PASS"
+    },
+    {
+      "check": "R7 progress counts",
+      "detail": "{'zero_validators_stopped': 5, 'one_validator_stopped': 5, 'two_validators_stopped': 0, 'quorum_restored_after_validator_restart': 5}",
+      "status": "PASS"
+    },
+    {
+      "check": "R7 restoration series",
+      "detail": "five values in each restoration series",
+      "status": "PASS"
+    },
+    {
+      "check": "Obsolete-value and terminology scan",
+      "detail": "scanned 21 visible-output files",
+      "status": "PASS"
+    },
+    {
+      "check": "Tool pdffonts available",
+      "detail": "pdffonts available",
+      "status": "PASS"
+    },
+    {
+      "check": "Tool pdfinfo available",
+      "detail": "pdfinfo available",
+      "status": "PASS"
+    },
+    {
+      "check": "Tool pdftoppm available",
+      "detail": "pdftoppm available",
+      "status": "PASS"
+    },
+    {
+      "check": "Output file count",
+      "detail": "observed=60, expected=60",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_block_period_sensitivity.pdf",
+      "detail": "paper_assets/figures/results/fig_results_block_period_sensitivity.pdf",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_block_period_sensitivity.pdf",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF valid fig_results_block_period_sensitivity.pdf",
+      "detail": "pdffonts parsed file",
+      "status": "PASS"
+    },
+    {
+      "check": "No Type 3 fig_results_block_period_sensitivity.pdf",
+      "detail": "no Type 3 font rows",
+      "status": "PASS"
+    },
+    {
+      "check": "Fonts embedded fig_results_block_period_sensitivity.pdf",
+      "detail": "font_rows=1",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF info fig_results_block_period_sensitivity.pdf",
+      "detail": "width_in=4.698222222222222",
+      "status": "PASS"
+    },
+    {
+      "check": "Main width fig_results_block_period_sensitivity.pdf",
+      "detail": "width_in=4.698222222222222",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF render fig_results_block_period_sensitivity.pdf",
+      "detail": "150 dpi validation render",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_block_period_sensitivity.svg",
+      "detail": "paper_assets/figures/results/fig_results_block_period_sensitivity.svg",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_block_period_sensitivity.svg",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG XML fig_results_block_period_sensitivity.svg",
+      "detail": "parsed as XML",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG editable text fig_results_block_period_sensitivity.svg",
+      "detail": "contains text elements",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG no raster image fig_results_block_period_sensitivity.svg",
+      "detail": "contains no image elements",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_block_period_sensitivity.png",
+      "detail": "paper_assets/figures/results/fig_results_block_period_sensitivity.png",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_block_period_sensitivity.png",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PNG 600 dpi fig_results_block_period_sensitivity.png",
+      "detail": "dpi=(599.9988, 599.9988), pixels=(2811, 1931)",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_success_share_software_cohorts.pdf",
+      "detail": "paper_assets/figures/results/fig_results_success_share_software_cohorts.pdf",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_success_share_software_cohorts.pdf",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF valid fig_results_success_share_software_cohorts.pdf",
+      "detail": "pdffonts parsed file",
+      "status": "PASS"
+    },
+    {
+      "check": "No Type 3 fig_results_success_share_software_cohorts.pdf",
+      "detail": "no Type 3 font rows",
+      "status": "PASS"
+    },
+    {
+      "check": "Fonts embedded fig_results_success_share_software_cohorts.pdf",
+      "detail": "font_rows=1",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF info fig_results_success_share_software_cohorts.pdf",
+      "detail": "width_in=4.698222222222222",
+      "status": "PASS"
+    },
+    {
+      "check": "Main width fig_results_success_share_software_cohorts.pdf",
+      "detail": "width_in=4.698222222222222",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF render fig_results_success_share_software_cohorts.pdf",
+      "detail": "150 dpi validation render",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_success_share_software_cohorts.svg",
+      "detail": "paper_assets/figures/results/fig_results_success_share_software_cohorts.svg",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_success_share_software_cohorts.svg",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG XML fig_results_success_share_software_cohorts.svg",
+      "detail": "parsed as XML",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG editable text fig_results_success_share_software_cohorts.svg",
+      "detail": "contains text elements",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG no raster image fig_results_success_share_software_cohorts.svg",
+      "detail": "contains no image elements",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_success_share_software_cohorts.png",
+      "detail": "paper_assets/figures/results/fig_results_success_share_software_cohorts.png",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_success_share_software_cohorts.png",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PNG 600 dpi fig_results_success_share_software_cohorts.png",
+      "detail": "dpi=(599.9988, 599.9988), pixels=(2820, 1885)",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_failure_probability_sensitivity_a.pdf",
+      "detail": "paper_assets/figures/results/panels/fig_results_failure_probability_sensitivity_a.pdf",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_failure_probability_sensitivity_a.pdf",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF valid fig_results_failure_probability_sensitivity_a.pdf",
+      "detail": "pdffonts parsed file",
+      "status": "PASS"
+    },
+    {
+      "check": "No Type 3 fig_results_failure_probability_sensitivity_a.pdf",
+      "detail": "no Type 3 font rows",
+      "status": "PASS"
+    },
+    {
+      "check": "Fonts embedded fig_results_failure_probability_sensitivity_a.pdf",
+      "detail": "font_rows=2",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF info fig_results_failure_probability_sensitivity_a.pdf",
+      "detail": "width_in=3.186972222222222",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF render fig_results_failure_probability_sensitivity_a.pdf",
+      "detail": "150 dpi validation render",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_failure_probability_sensitivity_a.svg",
+      "detail": "paper_assets/figures/results/panels/fig_results_failure_probability_sensitivity_a.svg",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_failure_probability_sensitivity_a.svg",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG XML fig_results_failure_probability_sensitivity_a.svg",
+      "detail": "parsed as XML",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG editable text fig_results_failure_probability_sensitivity_a.svg",
+      "detail": "contains text elements",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG no raster image fig_results_failure_probability_sensitivity_a.svg",
+      "detail": "contains no image elements",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_failure_probability_sensitivity_a.png",
+      "detail": "paper_assets/figures/results/panels/fig_results_failure_probability_sensitivity_a.png",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_failure_probability_sensitivity_a.png",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PNG 600 dpi fig_results_failure_probability_sensitivity_a.png",
+      "detail": "dpi=(599.9988, 599.9988), pixels=(1914, 1755)",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_failure_probability_sensitivity_b.pdf",
+      "detail": "paper_assets/figures/results/panels/fig_results_failure_probability_sensitivity_b.pdf",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_failure_probability_sensitivity_b.pdf",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF valid fig_results_failure_probability_sensitivity_b.pdf",
+      "detail": "pdffonts parsed file",
+      "status": "PASS"
+    },
+    {
+      "check": "No Type 3 fig_results_failure_probability_sensitivity_b.pdf",
+      "detail": "no Type 3 font rows",
+      "status": "PASS"
+    },
+    {
+      "check": "Fonts embedded fig_results_failure_probability_sensitivity_b.pdf",
+      "detail": "font_rows=2",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF info fig_results_failure_probability_sensitivity_b.pdf",
+      "detail": "width_in=3.21475",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF render fig_results_failure_probability_sensitivity_b.pdf",
+      "detail": "150 dpi validation render",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_failure_probability_sensitivity_b.svg",
+      "detail": "paper_assets/figures/results/panels/fig_results_failure_probability_sensitivity_b.svg",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_failure_probability_sensitivity_b.svg",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG XML fig_results_failure_probability_sensitivity_b.svg",
+      "detail": "parsed as XML",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG editable text fig_results_failure_probability_sensitivity_b.svg",
+      "detail": "contains text elements",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG no raster image fig_results_failure_probability_sensitivity_b.svg",
+      "detail": "contains no image elements",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_failure_probability_sensitivity_b.png",
+      "detail": "paper_assets/figures/results/panels/fig_results_failure_probability_sensitivity_b.png",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_failure_probability_sensitivity_b.png",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PNG 600 dpi fig_results_failure_probability_sensitivity_b.png",
+      "detail": "dpi=(599.9988, 599.9988), pixels=(1931, 1755)",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_failure_probability_sensitivity_c.pdf",
+      "detail": "paper_assets/figures/results/panels/fig_results_failure_probability_sensitivity_c.pdf",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_failure_probability_sensitivity_c.pdf",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF valid fig_results_failure_probability_sensitivity_c.pdf",
+      "detail": "pdffonts parsed file",
+      "status": "PASS"
+    },
+    {
+      "check": "No Type 3 fig_results_failure_probability_sensitivity_c.pdf",
+      "detail": "no Type 3 font rows",
+      "status": "PASS"
+    },
+    {
+      "check": "Fonts embedded fig_results_failure_probability_sensitivity_c.pdf",
+      "detail": "font_rows=2",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF info fig_results_failure_probability_sensitivity_c.pdf",
+      "detail": "width_in=3.159194444444444",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF render fig_results_failure_probability_sensitivity_c.pdf",
+      "detail": "150 dpi validation render",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_failure_probability_sensitivity_c.svg",
+      "detail": "paper_assets/figures/results/panels/fig_results_failure_probability_sensitivity_c.svg",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_failure_probability_sensitivity_c.svg",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG XML fig_results_failure_probability_sensitivity_c.svg",
+      "detail": "parsed as XML",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG editable text fig_results_failure_probability_sensitivity_c.svg",
+      "detail": "contains text elements",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG no raster image fig_results_failure_probability_sensitivity_c.svg",
+      "detail": "contains no image elements",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_failure_probability_sensitivity_c.png",
+      "detail": "paper_assets/figures/results/panels/fig_results_failure_probability_sensitivity_c.png",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_failure_probability_sensitivity_c.png",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PNG 600 dpi fig_results_failure_probability_sensitivity_c.png",
+      "detail": "dpi=(599.9988, 599.9988), pixels=(1897, 1755)",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_failure_probability_sensitivity.pdf",
+      "detail": "paper_assets/figures/results/fig_results_failure_probability_sensitivity.pdf",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_failure_probability_sensitivity.pdf",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF valid fig_results_failure_probability_sensitivity.pdf",
+      "detail": "pdffonts parsed file",
+      "status": "PASS"
+    },
+    {
+      "check": "No Type 3 fig_results_failure_probability_sensitivity.pdf",
+      "detail": "no Type 3 font rows",
+      "status": "PASS"
+    },
+    {
+      "check": "Fonts embedded fig_results_failure_probability_sensitivity.pdf",
+      "detail": "font_rows=2",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF info fig_results_failure_probability_sensitivity.pdf",
+      "detail": "width_in=7.196666666666666",
+      "status": "PASS"
+    },
+    {
+      "check": "Main width fig_results_failure_probability_sensitivity.pdf",
+      "detail": "width_in=7.196666666666666",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF render fig_results_failure_probability_sensitivity.pdf",
+      "detail": "150 dpi validation render",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_failure_probability_sensitivity.svg",
+      "detail": "paper_assets/figures/results/fig_results_failure_probability_sensitivity.svg",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_failure_probability_sensitivity.svg",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG XML fig_results_failure_probability_sensitivity.svg",
+      "detail": "parsed as XML",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG editable text fig_results_failure_probability_sensitivity.svg",
+      "detail": "contains text elements",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG no raster image fig_results_failure_probability_sensitivity.svg",
+      "detail": "contains no image elements",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_failure_probability_sensitivity.png",
+      "detail": "paper_assets/figures/results/fig_results_failure_probability_sensitivity.png",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_failure_probability_sensitivity.png",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PNG 600 dpi fig_results_failure_probability_sensitivity.png",
+      "detail": "dpi=(599.9988, 599.9988), pixels=(4317, 1647)",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_application_shaped_ipfs_retrieval.pdf",
+      "detail": "paper_assets/figures/results/fig_results_application_shaped_ipfs_retrieval.pdf",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_application_shaped_ipfs_retrieval.pdf",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF valid fig_results_application_shaped_ipfs_retrieval.pdf",
+      "detail": "pdffonts parsed file",
+      "status": "PASS"
+    },
+    {
+      "check": "No Type 3 fig_results_application_shaped_ipfs_retrieval.pdf",
+      "detail": "no Type 3 font rows",
+      "status": "PASS"
+    },
+    {
+      "check": "Fonts embedded fig_results_application_shaped_ipfs_retrieval.pdf",
+      "detail": "font_rows=1",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF info fig_results_application_shaped_ipfs_retrieval.pdf",
+      "detail": "width_in=7.065819444444444",
+      "status": "PASS"
+    },
+    {
+      "check": "Main width fig_results_application_shaped_ipfs_retrieval.pdf",
+      "detail": "width_in=7.065819444444444",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF render fig_results_application_shaped_ipfs_retrieval.pdf",
+      "detail": "150 dpi validation render",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_application_shaped_ipfs_retrieval.svg",
+      "detail": "paper_assets/figures/results/fig_results_application_shaped_ipfs_retrieval.svg",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_application_shaped_ipfs_retrieval.svg",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG XML fig_results_application_shaped_ipfs_retrieval.svg",
+      "detail": "parsed as XML",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG editable text fig_results_application_shaped_ipfs_retrieval.svg",
+      "detail": "contains text elements",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG no raster image fig_results_application_shaped_ipfs_retrieval.svg",
+      "detail": "contains no image elements",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_application_shaped_ipfs_retrieval.png",
+      "detail": "paper_assets/figures/results/fig_results_application_shaped_ipfs_retrieval.png",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_application_shaped_ipfs_retrieval.png",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PNG 600 dpi fig_results_application_shaped_ipfs_retrieval.png",
+      "detail": "dpi=(599.9988, 599.9988), pixels=(4252, 1829)",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_local_cache_reuse_a.pdf",
+      "detail": "paper_assets/figures/results/panels/fig_results_local_cache_reuse_a.pdf",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_local_cache_reuse_a.pdf",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF valid fig_results_local_cache_reuse_a.pdf",
+      "detail": "pdffonts parsed file",
+      "status": "PASS"
+    },
+    {
+      "check": "No Type 3 fig_results_local_cache_reuse_a.pdf",
+      "detail": "no Type 3 font rows",
+      "status": "PASS"
+    },
+    {
+      "check": "Fonts embedded fig_results_local_cache_reuse_a.pdf",
+      "detail": "font_rows=2",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF info fig_results_local_cache_reuse_a.pdf",
+      "detail": "width_in=3.3603055555555557",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF render fig_results_local_cache_reuse_a.pdf",
+      "detail": "150 dpi validation render",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_local_cache_reuse_a.svg",
+      "detail": "paper_assets/figures/results/panels/fig_results_local_cache_reuse_a.svg",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_local_cache_reuse_a.svg",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG XML fig_results_local_cache_reuse_a.svg",
+      "detail": "parsed as XML",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG editable text fig_results_local_cache_reuse_a.svg",
+      "detail": "contains text elements",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG no raster image fig_results_local_cache_reuse_a.svg",
+      "detail": "contains no image elements",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_local_cache_reuse_a.png",
+      "detail": "paper_assets/figures/results/panels/fig_results_local_cache_reuse_a.png",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_local_cache_reuse_a.png",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PNG 600 dpi fig_results_local_cache_reuse_a.png",
+      "detail": "dpi=(599.9988, 599.9988), pixels=(2018, 1696)",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_local_cache_reuse_b.pdf",
+      "detail": "paper_assets/figures/results/panels/fig_results_local_cache_reuse_b.pdf",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_local_cache_reuse_b.pdf",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF valid fig_results_local_cache_reuse_b.pdf",
+      "detail": "pdffonts parsed file",
+      "status": "PASS"
+    },
+    {
+      "check": "No Type 3 fig_results_local_cache_reuse_b.pdf",
+      "detail": "no Type 3 font rows",
+      "status": "PASS"
+    },
+    {
+      "check": "Fonts embedded fig_results_local_cache_reuse_b.pdf",
+      "detail": "font_rows=2",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF info fig_results_local_cache_reuse_b.pdf",
+      "detail": "width_in=3.21475",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF render fig_results_local_cache_reuse_b.pdf",
+      "detail": "150 dpi validation render",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_local_cache_reuse_b.svg",
+      "detail": "paper_assets/figures/results/panels/fig_results_local_cache_reuse_b.svg",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_local_cache_reuse_b.svg",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG XML fig_results_local_cache_reuse_b.svg",
+      "detail": "parsed as XML",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG editable text fig_results_local_cache_reuse_b.svg",
+      "detail": "contains text elements",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG no raster image fig_results_local_cache_reuse_b.svg",
+      "detail": "contains no image elements",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_local_cache_reuse_b.png",
+      "detail": "paper_assets/figures/results/panels/fig_results_local_cache_reuse_b.png",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_local_cache_reuse_b.png",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PNG 600 dpi fig_results_local_cache_reuse_b.png",
+      "detail": "dpi=(599.9988, 599.9988), pixels=(1931, 1581)",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_local_cache_reuse.pdf",
+      "detail": "paper_assets/figures/results/fig_results_local_cache_reuse.pdf",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_local_cache_reuse.pdf",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF valid fig_results_local_cache_reuse.pdf",
+      "detail": "pdffonts parsed file",
+      "status": "PASS"
+    },
+    {
+      "check": "No Type 3 fig_results_local_cache_reuse.pdf",
+      "detail": "no Type 3 font rows",
+      "status": "PASS"
+    },
+    {
+      "check": "Fonts embedded fig_results_local_cache_reuse.pdf",
+      "detail": "font_rows=2",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF info fig_results_local_cache_reuse.pdf",
+      "detail": "width_in=7.196666666666666",
+      "status": "PASS"
+    },
+    {
+      "check": "Main width fig_results_local_cache_reuse.pdf",
+      "detail": "width_in=7.196666666666666",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF render fig_results_local_cache_reuse.pdf",
+      "detail": "150 dpi validation render",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_local_cache_reuse.svg",
+      "detail": "paper_assets/figures/results/fig_results_local_cache_reuse.svg",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_local_cache_reuse.svg",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG XML fig_results_local_cache_reuse.svg",
+      "detail": "parsed as XML",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG editable text fig_results_local_cache_reuse.svg",
+      "detail": "contains text elements",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG no raster image fig_results_local_cache_reuse.svg",
+      "detail": "contains no image elements",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_local_cache_reuse.png",
+      "detail": "paper_assets/figures/results/fig_results_local_cache_reuse.png",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_local_cache_reuse.png",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PNG 600 dpi fig_results_local_cache_reuse.png",
+      "detail": "dpi=(599.9988, 599.9988), pixels=(4317, 1797)",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_storage_bounded_accountability_a.pdf",
+      "detail": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_a.pdf",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_storage_bounded_accountability_a.pdf",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF valid fig_results_storage_bounded_accountability_a.pdf",
+      "detail": "pdffonts parsed file",
+      "status": "PASS"
+    },
+    {
+      "check": "No Type 3 fig_results_storage_bounded_accountability_a.pdf",
+      "detail": "no Type 3 font rows",
+      "status": "PASS"
+    },
+    {
+      "check": "Fonts embedded fig_results_storage_bounded_accountability_a.pdf",
+      "detail": "font_rows=2",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF info fig_results_storage_bounded_accountability_a.pdf",
+      "detail": "width_in=3.1314166666666665",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF render fig_results_storage_bounded_accountability_a.pdf",
+      "detail": "150 dpi validation render",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_storage_bounded_accountability_a.svg",
+      "detail": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_a.svg",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_storage_bounded_accountability_a.svg",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG XML fig_results_storage_bounded_accountability_a.svg",
+      "detail": "parsed as XML",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG editable text fig_results_storage_bounded_accountability_a.svg",
+      "detail": "contains text elements",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG no raster image fig_results_storage_bounded_accountability_a.svg",
+      "detail": "contains no image elements",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_storage_bounded_accountability_a.png",
+      "detail": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_a.png",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_storage_bounded_accountability_a.png",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PNG 600 dpi fig_results_storage_bounded_accountability_a.png",
+      "detail": "dpi=(599.9988, 599.9988), pixels=(1880, 1633)",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_storage_bounded_accountability_b.pdf",
+      "detail": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_b.pdf",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_storage_bounded_accountability_b.pdf",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF valid fig_results_storage_bounded_accountability_b.pdf",
+      "detail": "pdffonts parsed file",
+      "status": "PASS"
+    },
+    {
+      "check": "No Type 3 fig_results_storage_bounded_accountability_b.pdf",
+      "detail": "no Type 3 font rows",
+      "status": "PASS"
+    },
+    {
+      "check": "Fonts embedded fig_results_storage_bounded_accountability_b.pdf",
+      "detail": "font_rows=2",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF info fig_results_storage_bounded_accountability_b.pdf",
+      "detail": "width_in=3.1314166666666665",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF render fig_results_storage_bounded_accountability_b.pdf",
+      "detail": "150 dpi validation render",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_storage_bounded_accountability_b.svg",
+      "detail": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_b.svg",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_storage_bounded_accountability_b.svg",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG XML fig_results_storage_bounded_accountability_b.svg",
+      "detail": "parsed as XML",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG editable text fig_results_storage_bounded_accountability_b.svg",
+      "detail": "contains text elements",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG no raster image fig_results_storage_bounded_accountability_b.svg",
+      "detail": "contains no image elements",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_storage_bounded_accountability_b.png",
+      "detail": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_b.png",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_storage_bounded_accountability_b.png",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PNG 600 dpi fig_results_storage_bounded_accountability_b.png",
+      "detail": "dpi=(599.9988, 599.9988), pixels=(1880, 1633)",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_storage_bounded_accountability_c.pdf",
+      "detail": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_c.pdf",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_storage_bounded_accountability_c.pdf",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF valid fig_results_storage_bounded_accountability_c.pdf",
+      "detail": "pdffonts parsed file",
+      "status": "PASS"
+    },
+    {
+      "check": "No Type 3 fig_results_storage_bounded_accountability_c.pdf",
+      "detail": "no Type 3 font rows",
+      "status": "PASS"
+    },
+    {
+      "check": "Fonts embedded fig_results_storage_bounded_accountability_c.pdf",
+      "detail": "font_rows=2",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF info fig_results_storage_bounded_accountability_c.pdf",
+      "detail": "width_in=3.1314166666666665",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF render fig_results_storage_bounded_accountability_c.pdf",
+      "detail": "150 dpi validation render",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_storage_bounded_accountability_c.svg",
+      "detail": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_c.svg",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_storage_bounded_accountability_c.svg",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG XML fig_results_storage_bounded_accountability_c.svg",
+      "detail": "parsed as XML",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG editable text fig_results_storage_bounded_accountability_c.svg",
+      "detail": "contains text elements",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG no raster image fig_results_storage_bounded_accountability_c.svg",
+      "detail": "contains no image elements",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_storage_bounded_accountability_c.png",
+      "detail": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_c.png",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_storage_bounded_accountability_c.png",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PNG 600 dpi fig_results_storage_bounded_accountability_c.png",
+      "detail": "dpi=(599.9988, 599.9988), pixels=(1880, 1633)",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_storage_bounded_accountability_d.pdf",
+      "detail": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_d.pdf",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_storage_bounded_accountability_d.pdf",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF valid fig_results_storage_bounded_accountability_d.pdf",
+      "detail": "pdffonts parsed file",
+      "status": "PASS"
+    },
+    {
+      "check": "No Type 3 fig_results_storage_bounded_accountability_d.pdf",
+      "detail": "no Type 3 font rows",
+      "status": "PASS"
+    },
+    {
+      "check": "Fonts embedded fig_results_storage_bounded_accountability_d.pdf",
+      "detail": "font_rows=2",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF info fig_results_storage_bounded_accountability_d.pdf",
+      "detail": "width_in=3.1314166666666665",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF render fig_results_storage_bounded_accountability_d.pdf",
+      "detail": "150 dpi validation render",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_storage_bounded_accountability_d.svg",
+      "detail": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_d.svg",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_storage_bounded_accountability_d.svg",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG XML fig_results_storage_bounded_accountability_d.svg",
+      "detail": "parsed as XML",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG editable text fig_results_storage_bounded_accountability_d.svg",
+      "detail": "contains text elements",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG no raster image fig_results_storage_bounded_accountability_d.svg",
+      "detail": "contains no image elements",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_storage_bounded_accountability_d.png",
+      "detail": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_d.png",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_storage_bounded_accountability_d.png",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PNG 600 dpi fig_results_storage_bounded_accountability_d.png",
+      "detail": "dpi=(599.9988, 599.9988), pixels=(1880, 1633)",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_storage_bounded_accountability_e.pdf",
+      "detail": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_e.pdf",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_storage_bounded_accountability_e.pdf",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF valid fig_results_storage_bounded_accountability_e.pdf",
+      "detail": "pdffonts parsed file",
+      "status": "PASS"
+    },
+    {
+      "check": "No Type 3 fig_results_storage_bounded_accountability_e.pdf",
+      "detail": "no Type 3 font rows",
+      "status": "PASS"
+    },
+    {
+      "check": "Fonts embedded fig_results_storage_bounded_accountability_e.pdf",
+      "detail": "font_rows=2",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF info fig_results_storage_bounded_accountability_e.pdf",
+      "detail": "width_in=3.1314166666666665",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF render fig_results_storage_bounded_accountability_e.pdf",
+      "detail": "150 dpi validation render",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_storage_bounded_accountability_e.svg",
+      "detail": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_e.svg",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_storage_bounded_accountability_e.svg",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG XML fig_results_storage_bounded_accountability_e.svg",
+      "detail": "parsed as XML",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG editable text fig_results_storage_bounded_accountability_e.svg",
+      "detail": "contains text elements",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG no raster image fig_results_storage_bounded_accountability_e.svg",
+      "detail": "contains no image elements",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_storage_bounded_accountability_e.png",
+      "detail": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_e.png",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_storage_bounded_accountability_e.png",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PNG 600 dpi fig_results_storage_bounded_accountability_e.png",
+      "detail": "dpi=(599.9988, 599.9988), pixels=(1880, 1633)",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_storage_bounded_accountability_f.pdf",
+      "detail": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_f.pdf",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_storage_bounded_accountability_f.pdf",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF valid fig_results_storage_bounded_accountability_f.pdf",
+      "detail": "pdffonts parsed file",
+      "status": "PASS"
+    },
+    {
+      "check": "No Type 3 fig_results_storage_bounded_accountability_f.pdf",
+      "detail": "no Type 3 font rows",
+      "status": "PASS"
+    },
+    {
+      "check": "Fonts embedded fig_results_storage_bounded_accountability_f.pdf",
+      "detail": "font_rows=2",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF info fig_results_storage_bounded_accountability_f.pdf",
+      "detail": "width_in=3.1314166666666665",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF render fig_results_storage_bounded_accountability_f.pdf",
+      "detail": "150 dpi validation render",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_storage_bounded_accountability_f.svg",
+      "detail": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_f.svg",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_storage_bounded_accountability_f.svg",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG XML fig_results_storage_bounded_accountability_f.svg",
+      "detail": "parsed as XML",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG editable text fig_results_storage_bounded_accountability_f.svg",
+      "detail": "contains text elements",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG no raster image fig_results_storage_bounded_accountability_f.svg",
+      "detail": "contains no image elements",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_storage_bounded_accountability_f.png",
+      "detail": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_f.png",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_storage_bounded_accountability_f.png",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PNG 600 dpi fig_results_storage_bounded_accountability_f.png",
+      "detail": "dpi=(599.9988, 599.9988), pixels=(1880, 1633)",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_storage_bounded_accountability.pdf",
+      "detail": "paper_assets/figures/results/fig_results_storage_bounded_accountability.pdf",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_storage_bounded_accountability.pdf",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF valid fig_results_storage_bounded_accountability.pdf",
+      "detail": "pdffonts parsed file",
+      "status": "PASS"
+    },
+    {
+      "check": "No Type 3 fig_results_storage_bounded_accountability.pdf",
+      "detail": "no Type 3 font rows",
+      "status": "PASS"
+    },
+    {
+      "check": "Fonts embedded fig_results_storage_bounded_accountability.pdf",
+      "detail": "font_rows=2",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF info fig_results_storage_bounded_accountability.pdf",
+      "detail": "width_in=7.189180555555556",
+      "status": "PASS"
+    },
+    {
+      "check": "Main width fig_results_storage_bounded_accountability.pdf",
+      "detail": "width_in=7.189180555555556",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF render fig_results_storage_bounded_accountability.pdf",
+      "detail": "150 dpi validation render",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_storage_bounded_accountability.svg",
+      "detail": "paper_assets/figures/results/fig_results_storage_bounded_accountability.svg",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_storage_bounded_accountability.svg",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG XML fig_results_storage_bounded_accountability.svg",
+      "detail": "parsed as XML",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG editable text fig_results_storage_bounded_accountability.svg",
+      "detail": "contains text elements",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG no raster image fig_results_storage_bounded_accountability.svg",
+      "detail": "contains no image elements",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_storage_bounded_accountability.png",
+      "detail": "paper_assets/figures/results/fig_results_storage_bounded_accountability.png",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_storage_bounded_accountability.png",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PNG 600 dpi fig_results_storage_bounded_accountability.png",
+      "detail": "dpi=(599.9988, 599.9988), pixels=(4317, 4429)",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_validator_crash_faults_a.pdf",
+      "detail": "paper_assets/figures/results/panels/fig_results_validator_crash_faults_a.pdf",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_validator_crash_faults_a.pdf",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF valid fig_results_validator_crash_faults_a.pdf",
+      "detail": "pdffonts parsed file",
+      "status": "PASS"
+    },
+    {
+      "check": "No Type 3 fig_results_validator_crash_faults_a.pdf",
+      "detail": "no Type 3 font rows",
+      "status": "PASS"
+    },
+    {
+      "check": "Fonts embedded fig_results_validator_crash_faults_a.pdf",
+      "detail": "font_rows=2",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF info fig_results_validator_crash_faults_a.pdf",
+      "detail": "width_in=3.1013333333333333",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF render fig_results_validator_crash_faults_a.pdf",
+      "detail": "150 dpi validation render",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_validator_crash_faults_a.svg",
+      "detail": "paper_assets/figures/results/panels/fig_results_validator_crash_faults_a.svg",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_validator_crash_faults_a.svg",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG XML fig_results_validator_crash_faults_a.svg",
+      "detail": "parsed as XML",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG editable text fig_results_validator_crash_faults_a.svg",
+      "detail": "contains text elements",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG no raster image fig_results_validator_crash_faults_a.svg",
+      "detail": "contains no image elements",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_validator_crash_faults_a.png",
+      "detail": "paper_assets/figures/results/panels/fig_results_validator_crash_faults_a.png",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_validator_crash_faults_a.png",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PNG 600 dpi fig_results_validator_crash_faults_a.png",
+      "detail": "dpi=(599.9988, 599.9988), pixels=(1860, 1686)",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_validator_crash_faults_b.pdf",
+      "detail": "paper_assets/figures/results/panels/fig_results_validator_crash_faults_b.pdf",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_validator_crash_faults_b.pdf",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF valid fig_results_validator_crash_faults_b.pdf",
+      "detail": "pdffonts parsed file",
+      "status": "PASS"
+    },
+    {
+      "check": "No Type 3 fig_results_validator_crash_faults_b.pdf",
+      "detail": "no Type 3 font rows",
+      "status": "PASS"
+    },
+    {
+      "check": "Fonts embedded fig_results_validator_crash_faults_b.pdf",
+      "detail": "font_rows=2",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF info fig_results_validator_crash_faults_b.pdf",
+      "detail": "width_in=3.1314166666666665",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF render fig_results_validator_crash_faults_b.pdf",
+      "detail": "150 dpi validation render",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_validator_crash_faults_b.svg",
+      "detail": "paper_assets/figures/results/panels/fig_results_validator_crash_faults_b.svg",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_validator_crash_faults_b.svg",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG XML fig_results_validator_crash_faults_b.svg",
+      "detail": "parsed as XML",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG editable text fig_results_validator_crash_faults_b.svg",
+      "detail": "contains text elements",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG no raster image fig_results_validator_crash_faults_b.svg",
+      "detail": "contains no image elements",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_validator_crash_faults_b.png",
+      "detail": "paper_assets/figures/results/panels/fig_results_validator_crash_faults_b.png",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_validator_crash_faults_b.png",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PNG 600 dpi fig_results_validator_crash_faults_b.png",
+      "detail": "dpi=(599.9988, 599.9988), pixels=(1880, 1706)",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_validator_crash_faults.pdf",
+      "detail": "paper_assets/figures/results/fig_results_validator_crash_faults.pdf",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_validator_crash_faults.pdf",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF valid fig_results_validator_crash_faults.pdf",
+      "detail": "pdffonts parsed file",
+      "status": "PASS"
+    },
+    {
+      "check": "No Type 3 fig_results_validator_crash_faults.pdf",
+      "detail": "no Type 3 font rows",
+      "status": "PASS"
+    },
+    {
+      "check": "Fonts embedded fig_results_validator_crash_faults.pdf",
+      "detail": "font_rows=2",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF info fig_results_validator_crash_faults.pdf",
+      "detail": "width_in=7.189180555555556",
+      "status": "PASS"
+    },
+    {
+      "check": "Main width fig_results_validator_crash_faults.pdf",
+      "detail": "width_in=7.189180555555556",
+      "status": "PASS"
+    },
+    {
+      "check": "PDF render fig_results_validator_crash_faults.pdf",
+      "detail": "150 dpi validation render",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_validator_crash_faults.svg",
+      "detail": "paper_assets/figures/results/fig_results_validator_crash_faults.svg",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_validator_crash_faults.svg",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG XML fig_results_validator_crash_faults.svg",
+      "detail": "parsed as XML",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG editable text fig_results_validator_crash_faults.svg",
+      "detail": "contains text elements",
+      "status": "PASS"
+    },
+    {
+      "check": "SVG no raster image fig_results_validator_crash_faults.svg",
+      "detail": "contains no image elements",
+      "status": "PASS"
+    },
+    {
+      "check": "Exists fig_results_validator_crash_faults.png",
+      "detail": "paper_assets/figures/results/fig_results_validator_crash_faults.png",
+      "status": "PASS"
+    },
+    {
+      "check": "Checksum fig_results_validator_crash_faults.png",
+      "detail": "matches metadata",
+      "status": "PASS"
+    },
+    {
+      "check": "PNG 600 dpi fig_results_validator_crash_faults.png",
+      "detail": "dpi=(599.9988, 599.9988), pixels=(4317, 1887)",
+      "status": "PASS"
+    },
+    {
+      "check": "LaTeX integration",
+      "detail": "compiled successfully",
+      "status": "PASS"
+    },
+    {
+      "check": "Workbook checksum stable",
+      "detail": "sha256=4d65d5085065a4baa364e3f83bb5d2b86519ee3195c516f34e098ad0e424d7a4",
+      "status": "PASS"
+    },
+    {
+      "check": "Frozen evidence checksums",
+      "detail": "checked=857, mismatches=[]",
+      "status": "PASS"
+    },
+    {
+      "check": "No protected Git changes",
+      "detail": "[]",
+      "status": "PASS"
+    },
+    {
+      "check": "Contact sheet",
+      "detail": "paper_assets/figures/results/previews/results_figure_contact_sheet.png",
+      "status": "PASS"
+    },
+    {
+      "check": "Visual contact-sheet review",
+      "detail": "Reviewed for clipping, overlap, panel consistency, grayscale distinctions, visible outliers, and excess whitespace",
+      "status": "PASS"
+    }
+  ],
+  "main_figure_count": 7,
+  "pdf_diagnostics": {
+    "paper_assets/figures/results/fig_results_application_shaped_ipfs_retrieval.pdf": {
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDKMVZK+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     18  0\n",
+      "pdfinfo": "Creator:         LedgerGuard results figure pipeline\nProducer:        Matplotlib pdf backend v3.11.1\nCreationDate:    Wed Sep  2 20:00:36 2026 +03\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       508.739 x 220.403 pts\nPage rot:        0\nFile size:       30383 bytes\nOptimized:       no\nPDF version:     1.4\n"
+    },
+    "paper_assets/figures/results/fig_results_block_period_sensitivity.pdf": {
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGDVSIW+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     18  0\n",
+      "pdfinfo": "Creator:         LedgerGuard results figure pipeline\nProducer:        Matplotlib pdf backend v3.11.1\nCreationDate:    Wed Sep  2 20:00:33 2026 +03\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       338.272 x 231.81 pts\nPage rot:        0\nFile size:       31455 bytes\nOptimized:       no\nPDF version:     1.4\n"
+    },
+    "paper_assets/figures/results/fig_results_failure_probability_sensitivity.pdf": {
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBZWZEN+TimesNewRomanPS-BoldMT        CID TrueType      Identity-H       yes yes yes     18  0\nHEWRZK+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     25  0\n",
+      "pdfinfo": "Creator:         LedgerGuard results figure pipeline\nProducer:        Matplotlib pdf backend v3.11.1\nCreationDate:    Wed Sep  2 20:00:36 2026 +03\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       518.16 x 197.774 pts\nPage rot:        0\nFile size:       42499 bytes\nOptimized:       no\nPDF version:     1.4\n"
+    },
+    "paper_assets/figures/results/fig_results_local_cache_reuse.pdf": {
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nCJTTVH+TimesNewRomanPS-BoldMT        CID TrueType      Identity-H       yes yes yes     17  0\nBLQAJC+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     24  0\n",
+      "pdfinfo": "Creator:         LedgerGuard results figure pipeline\nProducer:        Matplotlib pdf backend v3.11.1\nCreationDate:    Wed Sep  2 20:00:37 2026 +03\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       518.16 x 215.771 pts\nPage rot:        0\nFile size:       38884 bytes\nOptimized:       no\nPDF version:     1.4\n"
+    },
+    "paper_assets/figures/results/fig_results_storage_bounded_accountability.pdf": {
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDGKKBA+TimesNewRomanPS-BoldMT        CID TrueType      Identity-H       yes yes yes     27  0\nVWOZDB+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     34  0\n",
+      "pdfinfo": "Creator:         LedgerGuard results figure pipeline\nProducer:        Matplotlib pdf backend v3.11.1\nCreationDate:    Wed Sep  2 20:00:39 2026 +03\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       517.621 x 531.524 pts\nPage rot:        0\nFile size:       46152 bytes\nOptimized:       no\nPDF version:     1.4\n"
+    },
+    "paper_assets/figures/results/fig_results_success_share_software_cohorts.pdf": {
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nFXZUVH+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     18  0\n",
+      "pdfinfo": "Creator:         LedgerGuard results figure pipeline\nProducer:        Matplotlib pdf backend v3.11.1\nCreationDate:    Wed Sep  2 20:00:33 2026 +03\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       338.272 x 226.266 pts\nPage rot:        0\nFile size:       29320 bytes\nOptimized:       no\nPDF version:     1.4\n"
+    },
+    "paper_assets/figures/results/fig_results_validator_crash_faults.pdf": {
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nCJTTVH+TimesNewRomanPS-BoldMT        CID TrueType      Identity-H       yes yes yes     17  0\nTLRYOV+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     24  0\n",
+      "pdfinfo": "Creator:         LedgerGuard results figure pipeline\nProducer:        Matplotlib pdf backend v3.11.1\nCreationDate:    Wed Sep  2 20:00:40 2026 +03\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       517.621 x 226.555 pts\nPage rot:        0\nFile size:       42266 bytes\nOptimized:       no\nPDF version:     1.4\n"
+    },
+    "paper_assets/figures/results/panels/fig_results_failure_probability_sensitivity_a.pdf": {
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nUPBQTP+TimesNewRomanPS-BoldMT        CID TrueType      Identity-H       yes yes yes     16  0\nFRYHWU+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     23  0\n",
+      "pdfinfo": "Creator:         LedgerGuard results figure pipeline\nProducer:        Matplotlib pdf backend v3.11.1\nCreationDate:    Wed Sep  2 20:00:35 2026 +03\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       229.462 x 210.686 pts\nPage rot:        0\nFile size:       38089 bytes\nOptimized:       no\nPDF version:     1.4\n"
+    },
+    "paper_assets/figures/results/panels/fig_results_failure_probability_sensitivity_b.pdf": {
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDYHGGW+TimesNewRomanPS-BoldMT        CID TrueType      Identity-H       yes yes yes     16  0\nHASYQA+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     23  0\n",
+      "pdfinfo": "Creator:         LedgerGuard results figure pipeline\nProducer:        Matplotlib pdf backend v3.11.1\nCreationDate:    Wed Sep  2 20:00:35 2026 +03\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       231.462 x 210.686 pts\nPage rot:        0\nFile size:       36917 bytes\nOptimized:       no\nPDF version:     1.4\n"
+    },
+    "paper_assets/figures/results/panels/fig_results_failure_probability_sensitivity_c.pdf": {
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGOZZYU+TimesNewRomanPS-BoldMT        CID TrueType      Identity-H       yes yes yes     16  0\nCEDWVQ+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     23  0\n",
+      "pdfinfo": "Creator:         LedgerGuard results figure pipeline\nProducer:        Matplotlib pdf backend v3.11.1\nCreationDate:    Wed Sep  2 20:00:36 2026 +03\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       227.462 x 210.686 pts\nPage rot:        0\nFile size:       36232 bytes\nOptimized:       no\nPDF version:     1.4\n"
+    },
+    "paper_assets/figures/results/panels/fig_results_local_cache_reuse_a.pdf": {
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nUPBQTP+TimesNewRomanPS-BoldMT        CID TrueType      Identity-H       yes yes yes     15  0\nDILMWH+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     22  0\n",
+      "pdfinfo": "Creator:         LedgerGuard results figure pipeline\nProducer:        Matplotlib pdf backend v3.11.1\nCreationDate:    Wed Sep  2 20:00:37 2026 +03\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       241.942 x 204.324 pts\nPage rot:        0\nFile size:       33334 bytes\nOptimized:       no\nPDF version:     1.4\n"
+    },
+    "paper_assets/figures/results/panels/fig_results_local_cache_reuse_b.pdf": {
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDYHGGW+TimesNewRomanPS-BoldMT        CID TrueType      Identity-H       yes yes yes     17  0\nHFGGDA+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     24  0\n",
+      "pdfinfo": "Creator:         LedgerGuard results figure pipeline\nProducer:        Matplotlib pdf backend v3.11.1\nCreationDate:    Wed Sep  2 20:00:37 2026 +03\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       231.462 x 189.694 pts\nPage rot:        0\nFile size:       33611 bytes\nOptimized:       no\nPDF version:     1.4\n"
+    },
+    "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_a.pdf": {
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nUPBQTP+TimesNewRomanPS-BoldMT        CID TrueType      Identity-H       yes yes yes     17  0\nGOOCTX+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     24  0\n",
+      "pdfinfo": "Creator:         LedgerGuard results figure pipeline\nProducer:        Matplotlib pdf backend v3.11.1\nCreationDate:    Wed Sep  2 20:00:38 2026 +03\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       225.462 x 195.994 pts\nPage rot:        0\nFile size:       39436 bytes\nOptimized:       no\nPDF version:     1.4\n"
+    },
+    "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_b.pdf": {
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDYHGGW+TimesNewRomanPS-BoldMT        CID TrueType      Identity-H       yes yes yes     17  0\nDULHYU+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     24  0\n",
+      "pdfinfo": "Creator:         LedgerGuard results figure pipeline\nProducer:        Matplotlib pdf backend v3.11.1\nCreationDate:    Wed Sep  2 20:00:38 2026 +03\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       225.462 x 195.994 pts\nPage rot:        0\nFile size:       35509 bytes\nOptimized:       no\nPDF version:     1.4\n"
+    },
+    "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_c.pdf": {
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nGOZZYU+TimesNewRomanPS-BoldMT        CID TrueType      Identity-H       yes yes yes     17  0\nCTGWIN+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     24  0\n",
+      "pdfinfo": "Creator:         LedgerGuard results figure pipeline\nProducer:        Matplotlib pdf backend v3.11.1\nCreationDate:    Wed Sep  2 20:00:38 2026 +03\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       225.462 x 195.994 pts\nPage rot:        0\nFile size:       35939 bytes\nOptimized:       no\nPDF version:     1.4\n"
+    },
+    "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_d.pdf": {
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nBKPCVS+TimesNewRomanPS-BoldMT        CID TrueType      Identity-H       yes yes yes     17  0\nDULHYU+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     24  0\n",
+      "pdfinfo": "Creator:         LedgerGuard results figure pipeline\nProducer:        Matplotlib pdf backend v3.11.1\nCreationDate:    Wed Sep  2 20:00:38 2026 +03\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       225.462 x 195.994 pts\nPage rot:        0\nFile size:       35599 bytes\nOptimized:       no\nPDF version:     1.4\n"
+    },
+    "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_e.pdf": {
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nFLZWLL+TimesNewRomanPS-BoldMT        CID TrueType      Identity-H       yes yes yes     17  0\nCCCSIV+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     24  0\n",
+      "pdfinfo": "Creator:         LedgerGuard results figure pipeline\nProducer:        Matplotlib pdf backend v3.11.1\nCreationDate:    Wed Sep  2 20:00:38 2026 +03\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       225.462 x 195.994 pts\nPage rot:        0\nFile size:       36134 bytes\nOptimized:       no\nPDF version:     1.4\n"
+    },
+    "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_f.pdf": {
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nEDMLKL+TimesNewRomanPS-BoldMT        CID TrueType      Identity-H       yes yes yes     17  0\nBWLCOR+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     24  0\n",
+      "pdfinfo": "Creator:         LedgerGuard results figure pipeline\nProducer:        Matplotlib pdf backend v3.11.1\nCreationDate:    Wed Sep  2 20:00:39 2026 +03\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       225.462 x 195.994 pts\nPage rot:        0\nFile size:       35693 bytes\nOptimized:       no\nPDF version:     1.4\n"
+    },
+    "paper_assets/figures/results/panels/fig_results_validator_crash_faults_a.pdf": {
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nUPBQTP+TimesNewRomanPS-BoldMT        CID TrueType      Identity-H       yes yes yes     15  0\nHKMSTI+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     22  0\n",
+      "pdfinfo": "Creator:         LedgerGuard results figure pipeline\nProducer:        Matplotlib pdf backend v3.11.1\nCreationDate:    Wed Sep  2 20:00:40 2026 +03\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       223.296 x 202.304 pts\nPage rot:        0\nFile size:       37203 bytes\nOptimized:       no\nPDF version:     1.4\n"
+    },
+    "paper_assets/figures/results/panels/fig_results_validator_crash_faults_b.pdf": {
+      "pdffonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nDYHGGW+TimesNewRomanPS-BoldMT        CID TrueType      Identity-H       yes yes yes     17  0\nEYIUDY+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     24  0\n",
+      "pdfinfo": "Creator:         LedgerGuard results figure pipeline\nProducer:        Matplotlib pdf backend v3.11.1\nCreationDate:    Wed Sep  2 20:00:40 2026 +03\nCustom Metadata: no\nMetadata Stream: no\nTagged:          no\nUserProperties:  no\nSuspects:        no\nForm:            none\nJavaScript:      no\nPages:           1\nEncrypted:       no\nPage size:       225.462 x 204.809 pts\nPage rot:        0\nFile size:       37623 bytes\nOptimized:       no\nPDF version:     1.4\n"
+    }
+  },
+  "status": "PASS",
+  "workbook": "LedgerGuard_Comprehensive_Results.xlsx",
+  "workbook_sha256": "4d65d5085065a4baa364e3f83bb5d2b86519ee3195c516f34e098ad0e424d7a4"
+}

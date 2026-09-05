@@ -1,0 +1,82 @@
+{
+  "aggregation_method": "Median origin-side transfer and all independent trial retrieval times with box summaries",
+  "bootstrap_seed": null,
+  "evidence_class": "local cache reuse",
+  "excluded_row_count": 0,
+  "figure_semantic_name": "fig_results_local_cache_reuse",
+  "filters": {},
+  "generated_timestamp": "2026-09-02T17:00:38.039198+00:00",
+  "git_commit": "ede536f15ae826e78af88f5ac6b2f7b29ddff069",
+  "manuscript_label": "fig:cache-reuse",
+  "maximum": 19.32780216599349,
+  "median": 3.5143215210409835,
+  "minimum": 0.2239600419998169,
+  "output_files": [
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_local_cache_reuse_a.pdf",
+      "sha256": "0efadb288551e3a71f1a131bb0001ecb94a4a604aa2fa3bfe76671d14107bffc"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_local_cache_reuse_a.svg",
+      "sha256": "a373c34b3e7ab18dcfd6da63627a076363ddce35b3fe3d815dc900dda80593d4"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_local_cache_reuse_a.png",
+      "sha256": "ad4edbefa23e0355917aabcd40c78a88a4d451cd3083ec6731cd9fbf6f89b7f1"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_local_cache_reuse_b.pdf",
+      "sha256": "fd938b33c2c8a92e1846a9299ebe8f88a3ff485cf1f3f0ae134df3476eacec82"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_local_cache_reuse_b.svg",
+      "sha256": "87745ddf26ab98902473bb2807d1a7d164cdd264c82975b68bb3442f8ee75b27"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_local_cache_reuse_b.png",
+      "sha256": "62ce432b78c51e5a8ff7f37e2e083f32a4884dfdf0a3348e8517d2b27acad36e"
+    },
+    {
+      "path": "paper_assets/figures/results/fig_results_local_cache_reuse.pdf",
+      "sha256": "c78e2c015008a837e6e1d101f5a8296e84bb361346cc13031bcedfcbcb828e7e"
+    },
+    {
+      "path": "paper_assets/figures/results/fig_results_local_cache_reuse.svg",
+      "sha256": "cdbd029af2bfe6e0f35aefa93ce55563b89358c9879273cc0b1d342693c2d828"
+    },
+    {
+      "path": "paper_assets/figures/results/fig_results_local_cache_reuse.png",
+      "sha256": "2bbbba89dfcf20883e5f2e2749021d1a8210d76432489e7189e913205d97f765"
+    }
+  ],
+  "plotting_script_path": "experiments/analysis/make_results_figures.py",
+  "plotting_script_sha256": "f665e45f8ab05719eab948a5e0a0523e3bb396ee14030ae8dad8fe91e21d2569",
+  "row_count": 20,
+  "selected_font": "Times New Roman",
+  "source_columns": [
+    "record_type",
+    "cache_mode",
+    "trial",
+    "artifact_requests",
+    "origin_requests",
+    "cache_hits",
+    "origin_bytes_transferred",
+    "origin_side_transfer_mib",
+    "total_retrieval_time_seconds",
+    "integrity_failures"
+  ],
+  "source_csv_paths": [
+    "results/reviewer_revision/csv/edge_cache_trials.csv"
+  ],
+  "source_csv_sha256": {
+    "results/reviewer_revision/csv/edge_cache_trials.csv": "9ea104858b892c68fa8210da056bc5bd230bedbcb6c0d601aff261c7d69d3633"
+  },
+  "source_worksheet_names": [
+    "Cache Trials",
+    "Cache Ablation"
+  ],
+  "validation_report": "paper_assets/figures/results/figure_validation_report.md",
+  "validation_status": "PASS",
+  "workbook_filename": "LedgerGuard_Comprehensive_Results.xlsx",
+  "workbook_sha256": "4d65d5085065a4baa364e3f83bb5d2b86519ee3195c516f34e098ad0e424d7a4"
+}

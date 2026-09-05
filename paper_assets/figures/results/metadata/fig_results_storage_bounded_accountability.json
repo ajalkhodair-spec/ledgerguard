@@ -1,0 +1,154 @@
+{
+  "aggregation_method": "Analytical projection normalized to per-device reporting using compiler-layout bytes and executed median logical-path gas",
+  "bootstrap_seed": null,
+  "evidence_class": "compiler-layout and executed-path-grounded analytical projections",
+  "excluded_row_count": 0,
+  "figure_semantic_name": "fig_results_storage_bounded_accountability",
+  "filters": {
+    "batch_sizes": [
+      25,
+      50,
+      100,
+      200
+    ],
+    "cohort_sizes": [
+      100,
+      500,
+      1000
+    ],
+    "normalization_baseline": "Per-device reporting = 100%",
+    "plotted_approaches": [
+      "Integrity-only aggregation",
+      "Complete-cohort witnessed aggregation"
+    ]
+  },
+  "generated_timestamp": "2026-09-02T17:00:40.259030+00:00",
+  "git_commit": "ede536f15ae826e78af88f5ac6b2f7b29ddff069",
+  "manuscript_label": "fig:accountability-tradeoff",
+  "maximum": 10.26069898667612,
+  "median": 1.5183045038675975,
+  "minimum": 0.18330278286952176,
+  "output_files": [
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_a.pdf",
+      "sha256": "28a8952552d60d57461ccad710a1568df2254fd38f431de95c5a1c83a71a5261"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_a.svg",
+      "sha256": "1484a3ed41ab9a8ca49156b1f26e27ede86ed3e257f72da3de980bdac7ba5b4f"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_a.png",
+      "sha256": "2510b32589719153c1f941af16ef5352a30ba2c959d6e359144a56fdc909ff90"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_b.pdf",
+      "sha256": "b213dc6d98fcd5c9cb73e3c46dce64710d6b51ede8e052d425e2f860dcebaa0f"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_b.svg",
+      "sha256": "c542cc56f798be0459167ccff366ec8511e88c99152af82b66c898c5e5243175"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_b.png",
+      "sha256": "fe018f3e786f752eb49b8ac6edb13da5066d3d5ebdfed03667100110a29eb067"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_c.pdf",
+      "sha256": "f0bfee6024f72f11408c8ef9c811d69449e9ce3a37b7d0ec567aa090ce437070"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_c.svg",
+      "sha256": "22a8df0a21fc116daa849fd6ad0444a565b5b27cbcf3292746ff13d3fe3c94a6"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_c.png",
+      "sha256": "4722f707510255bdb21ba144df8b8e82329da0b81fc544c46d3c318f13a782f6"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_d.pdf",
+      "sha256": "e1c723d0b1a9c10395729f6b69e13595e20be7c41036eb5ed83fd141da188886"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_d.svg",
+      "sha256": "df78051f781b49b32f98b38f9809e084648adb9de09a23ca2dc31a64d2fa8c6a"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_d.png",
+      "sha256": "330c2f02f60283f329581b68ca17bc7a2a28278fc65af6328002bbc2dd0367e4"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_e.pdf",
+      "sha256": "eb1ecb1663e6457d2054992cc2fc34d6b925a192f301a1c0d5be1a07607a7703"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_e.svg",
+      "sha256": "1e71aabb696f1a579145725a054fe56b7a9f9c7d0b7a3a06819ad9e5a0c8c977"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_e.png",
+      "sha256": "4292170c912d23aecfbbe5ef9d1040927137d7741847b45ff95bc5e6ce9b9a59"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_f.pdf",
+      "sha256": "e96da93341bbfc7887483191e866aee28aa03c470b847cf17d41968e821df8b0"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_f.svg",
+      "sha256": "378919429e82396300dd362c5b4b57cc842cbabe7836123821c9d511114869b3"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_storage_bounded_accountability_f.png",
+      "sha256": "82f7e2edd523ca6a51e5e3b6f739be3c636646a669df5fcf12cc007630e92de6"
+    },
+    {
+      "path": "paper_assets/figures/results/fig_results_storage_bounded_accountability.pdf",
+      "sha256": "764e6a239c0eba51f54d74ce5dd470b61e2b9c276a926a644fd18cd49b31f354"
+    },
+    {
+      "path": "paper_assets/figures/results/fig_results_storage_bounded_accountability.svg",
+      "sha256": "c6b213c206ec95204792de5ba6e33f672b1a130c09370b121a461c54770f5ccd"
+    },
+    {
+      "path": "paper_assets/figures/results/fig_results_storage_bounded_accountability.png",
+      "sha256": "3237dbedc83cb9f62d78cd606a8868bca2012cbca2209397b34ac5dee40b4da3"
+    }
+  ],
+  "plotting_script_path": "experiments/analysis/make_results_figures.py",
+  "plotting_script_sha256": "f665e45f8ab05719eab948a5e0a0523e3bb396ee14030ae8dad8fe91e21d2569",
+  "row_count": 36,
+  "selected_font": "Times New Roman",
+  "source_columns": [
+    "cohort_size_software_identities",
+    "batch_size",
+    "reporting_approach",
+    "projected_transaction_count",
+    "projected_storage_slot_bytes",
+    "projected_gas",
+    "executed_median_logical_path_gas_basis",
+    "storage_relative_to_per_device_percent",
+    "gas_relative_to_per_device_percent"
+  ],
+  "source_csv_paths": [
+    "results/reviewer_revision/csv/accountability_ablation.csv",
+    "results/reviewer_revision/csv/accountability_path_statistics.csv",
+    "results/reviewer_revision/csv/accountability_path_totals.csv",
+    "results/reviewer_revision/statistics/gas_break_even.csv"
+  ],
+  "source_csv_sha256": {
+    "results/reviewer_revision/csv/accountability_ablation.csv": "5930d2de8e97142fb3fc7053e84b3f4111c9f1e0c2e68d5486593d4e7c89d3ba",
+    "results/reviewer_revision/csv/accountability_path_statistics.csv": "edf993f0f7321f02db64cb10660d874cc04ab1b98008f6c6c84fe8c3f3463a6e",
+    "results/reviewer_revision/csv/accountability_path_totals.csv": "ba8995d6e5459bc2a94eac1ea88b61af8d8835da53e7fc9ce7c61007d76b27e2",
+    "results/reviewer_revision/statistics/gas_break_even.csv": "2b022ba5a491e383fb7d0771073cd5c1f4fde597b2845bac3c59325a9f826b1a"
+  },
+  "source_worksheet_names": [
+    "Acct Ablation",
+    "Acct Path Statistics",
+    "Acct Path Totals",
+    "Gas Break Even"
+  ],
+  "validation_report": "paper_assets/figures/results/figure_validation_report.md",
+  "validation_status": "PASS",
+  "workbook_filename": "LedgerGuard_Comprehensive_Results.xlsx",
+  "workbook_sha256": "4d65d5085065a4baa364e3f83bb5d2b86519ee3195c516f34e098ad0e424d7a4"
+}

@@ -40,6 +40,9 @@ results/archive/**
 results/reviewer_revision/**
 paper_assets/tables/**
 paper_assets/figures/**
+!paper_assets/figures/results/
+!paper_assets/figures/results/**
+paper_assets/figures/results/previews/
 paper_assets/text_insertions/**
 paper_assets/reviewer_revision/figures/*.png
 !results/raw/.gitkeep
@@ -60,6 +63,9 @@ paper_assets/reviewer_revision/figures/*.png
 # Full evidence bundle is generated locally and attached to releases
 release/**
 !release/README.md
+
+# Generated publication workbooks are distributed as release assets
+/LedgerGuard_Comprehensive_Results.xlsx
 
 # Logs and temporary files
 *.log

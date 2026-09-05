@@ -1,0 +1,61 @@
+{
+  "aggregation_method": "All observations with box summaries; no P95 reported for n=30",
+  "bootstrap_seed": null,
+  "evidence_class": "representative local Besu state-changing transaction sensitivity",
+  "excluded_row_count": 0,
+  "figure_semantic_name": "fig_results_block_period_sensitivity",
+  "filters": {
+    "block_period_seconds": [
+      1,
+      2,
+      4
+    ],
+    "status": "success"
+  },
+  "generated_timestamp": "2026-09-02T17:00:33.554722+00:00",
+  "git_commit": "ede536f15ae826e78af88f5ac6b2f7b29ddff069",
+  "manuscript_label": "fig:block-period-sensitivity",
+  "maximum": 31.031609,
+  "median": 2.0361745,
+  "minimum": 1.027184,
+  "output_files": [
+    {
+      "path": "paper_assets/figures/results/fig_results_block_period_sensitivity.pdf",
+      "sha256": "ef26f3810ae5881e04290a4ca78ec6a5d14f7eac84d94f2de031c7ffdaa5ea5b"
+    },
+    {
+      "path": "paper_assets/figures/results/fig_results_block_period_sensitivity.svg",
+      "sha256": "0ecc164a45a295757e5fbc3965932a8fd9aa217cfad33e65c5bd3614a1589d55"
+    },
+    {
+      "path": "paper_assets/figures/results/fig_results_block_period_sensitivity.png",
+      "sha256": "c63b01935a8bcaeb400770b6e92ca735fc5de4904b703ecb61bc9e317630b78a"
+    }
+  ],
+  "plotting_script_path": "experiments/analysis/make_results_figures.py",
+  "plotting_script_sha256": "f665e45f8ab05719eab948a5e0a0523e3bb396ee14030ae8dad8fe91e21d2569",
+  "row_count": 90,
+  "selected_font": "Times New Roman",
+  "source_columns": [
+    "configured_block_period_seconds",
+    "repetition",
+    "operation",
+    "submission_to_receipt_latency_seconds",
+    "receipt_poll_interval_seconds",
+    "status"
+  ],
+  "source_csv_paths": [
+    "results/reviewer_revision/csv/block_period_sensitivity.csv"
+  ],
+  "source_csv_sha256": {
+    "results/reviewer_revision/csv/block_period_sensitivity.csv": "28c960f478ba6b98607d9f431d51a7ab4679197323e03946799f162f3b159356"
+  },
+  "source_worksheet_names": [
+    "Block Period Raw",
+    "Block Period Summary"
+  ],
+  "validation_report": "paper_assets/figures/results/figure_validation_report.md",
+  "validation_status": "PASS",
+  "workbook_filename": "LedgerGuard_Comprehensive_Results.xlsx",
+  "workbook_sha256": "4d65d5085065a4baa364e3f83bb5d2b86519ee3195c516f34e098ad0e424d7a4"
+}

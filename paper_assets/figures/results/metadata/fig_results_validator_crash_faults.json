@@ -1,0 +1,77 @@
+{
+  "aggregation_method": "Observed-progress trial counts and all per-trial quorum-restoration times",
+  "bootstrap_seed": null,
+  "evidence_class": "local validator crash-fault experiment",
+  "excluded_row_count": 0,
+  "figure_semantic_name": "fig_results_validator_crash_faults",
+  "filters": {},
+  "generated_timestamp": "2026-09-02T17:00:41.187870+00:00",
+  "git_commit": "ede536f15ae826e78af88f5ac6b2f7b29ddff069",
+  "manuscript_label": "fig:validator-faults",
+  "maximum": 82.23677870805841,
+  "median": 44.60869225056376,
+  "minimum": 39.46649912500288,
+  "output_files": [
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_validator_crash_faults_a.pdf",
+      "sha256": "178e7cbad5219a147c22800f0c9d4583abbe7bc367a34477741509f23623382a"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_validator_crash_faults_a.svg",
+      "sha256": "4ae7f8c7776bed391d2c2b6cde0c313b62af1712a94fbd7e96c02c784ea152e2"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_validator_crash_faults_a.png",
+      "sha256": "815dea91e9ba2c08180bb0cd6bb0e754c1d3a42777ef80c7d6d9580f32192925"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_validator_crash_faults_b.pdf",
+      "sha256": "279ea8cadaebeef3fb4c7e5e0a18d2e7950f761dcca5ae4f447d60b72ce71587"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_validator_crash_faults_b.svg",
+      "sha256": "0f0d831d692df4c29dd194901bf5ef523ebe31b27dd4dace73bd1fffe0fc6754"
+    },
+    {
+      "path": "paper_assets/figures/results/panels/fig_results_validator_crash_faults_b.png",
+      "sha256": "aa691f8f6b4e413206f1aa2c7aee97dd00babc2f3a0d6b736c9948b53a56ccf9"
+    },
+    {
+      "path": "paper_assets/figures/results/fig_results_validator_crash_faults.pdf",
+      "sha256": "17df4c263088086848aec51631193efb7aa875babc51e8d69ad2e6e66537cc3e"
+    },
+    {
+      "path": "paper_assets/figures/results/fig_results_validator_crash_faults.svg",
+      "sha256": "ebe3e9f0eef3573be1d3f0aae7e8bebdd761858cb6650e9fe4bf4b5bf2ddddae"
+    },
+    {
+      "path": "paper_assets/figures/results/fig_results_validator_crash_faults.png",
+      "sha256": "510cbfe88cbb7be002660fb64eccfb093620c19909008e9d784df5eb987a93f6"
+    }
+  ],
+  "plotting_script_path": "experiments/analysis/make_results_figures.py",
+  "plotting_script_sha256": "f665e45f8ab05719eab948a5e0a0523e3bb396ee14030ae8dad8fe91e21d2569",
+  "row_count": 20,
+  "selected_font": "Times New Roman",
+  "source_columns": [
+    "trial",
+    "phase",
+    "active_validator_processes",
+    "observed_block_progress",
+    "restart_to_first_block_seconds",
+    "restart_to_first_receipt_seconds"
+  ],
+  "source_csv_paths": [
+    "results/reviewer_revision/csv/validator_faults.csv"
+  ],
+  "source_csv_sha256": {
+    "results/reviewer_revision/csv/validator_faults.csv": "d114cf4c9089f3816a4771773d736bd05fe60d9293b8dee51b08b074cb99b176"
+  },
+  "source_worksheet_names": [
+    "Validator Faults"
+  ],
+  "validation_report": "paper_assets/figures/results/figure_validation_report.md",
+  "validation_status": "PASS",
+  "workbook_filename": "LedgerGuard_Comprehensive_Results.xlsx",
+  "workbook_sha256": "4d65d5085065a4baa364e3f83bb5d2b86519ee3195c516f34e098ad0e424d7a4"
+}

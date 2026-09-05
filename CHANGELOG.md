@@ -10,6 +10,9 @@
 - Repeated local Besu timing, block-period sensitivity, gas, coverage, fuzz, invariant, Slither, parallel-RPC race, accountability, network, cache, and validator crash-fault evidence.
 - Fixed-seed multi-configuration software fleet evaluation and canonical receipt-size analysis.
 - Consolidated validation, claim registry, reviewer matrices, reproducibility scripts, CI, public-safety checks, checksums, and public sample strategy.
+- Publication-ready Results figures in PDF, editable SVG, and 600 dpi PNG, with plot-level CSV data, provenance metadata, LaTeX integration, and independent validation.
+- Portable figure-validation tool discovery and release checks that reject host-specific paths from public artifacts.
+- GitHub and Zenodo release documentation separating versioned source artifacts from the comprehensive workbook and full evidence release assets.
 
 ### Boundaries
 

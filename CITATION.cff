@@ -2,6 +2,12 @@ cff-version: 1.2.0
 message: "If you use LedgerGuard or its evaluation artifacts, cite this software."
 title: "LedgerGuard: Permissioned-Ledger Firmware Governance Research PoC"
 type: software
+abstract: >-
+  LedgerGuard is a research proof of concept for auditable firmware-release
+  governance over a permissioned Hyperledger Besu control plane. Firmware
+  artifacts remain in content-addressed storage while the ledger records
+  release commitments, threshold approvals, guarded rollout state,
+  authenticated software-device outcomes, and Merkle-rooted cohort summaries.
 authors:
   - family-names: Alkhodair
     given-names: Ahmad
@@ -15,3 +21,5 @@ keywords:
   - Hyperledger Besu
   - software supply chain
   - Merkle accountability
+  - secure firmware update
+  - research software

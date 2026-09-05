@@ -1,0 +1,54 @@
+{
+  "aggregation_method": "Mean and 10,000-resample bootstrap 95% confidence interval",
+  "bootstrap_seed": 20260828,
+  "evidence_class": "authenticated software-device execution",
+  "excluded_row_count": 0,
+  "figure_semantic_name": "fig_results_success_share_software_cohorts",
+  "filters": {},
+  "generated_timestamp": "2026-09-02T17:00:34.097452+00:00",
+  "git_commit": "ede536f15ae826e78af88f5ac6b2f7b29ddff069",
+  "manuscript_label": "fig:fleet-success-share",
+  "maximum": 99.04499999999999,
+  "median": 97.99999999999999,
+  "minimum": 94.95000000000002,
+  "output_files": [
+    {
+      "path": "paper_assets/figures/results/fig_results_success_share_software_cohorts.pdf",
+      "sha256": "7acea3730017e0298a084274168ef1fd877757340b4130eba3b754e86f40cac8"
+    },
+    {
+      "path": "paper_assets/figures/results/fig_results_success_share_software_cohorts.svg",
+      "sha256": "1c312f48465bb87753acab0bc9eeb179e45ebf56f4ca7969792bb5ce2ed6107f"
+    },
+    {
+      "path": "paper_assets/figures/results/fig_results_success_share_software_cohorts.png",
+      "sha256": "8877a3f57159cce30bf7dbd888475f93a5fc273353f6f8105bbc3520dde220c5"
+    }
+  ],
+  "plotting_script_path": "experiments/analysis/make_results_figures.py",
+  "plotting_script_sha256": "f665e45f8ab05719eab948a5e0a0523e3bb396ee14030ae8dad8fe91e21d2569",
+  "row_count": 180,
+  "selected_font": "Times New Roman",
+  "source_columns": [
+    "cohort_size_software_identities",
+    "configured_failure_probability",
+    "seed_count",
+    "mean_success_share_percent",
+    "bootstrap_95_ci_low_percent",
+    "bootstrap_95_ci_high_percent"
+  ],
+  "source_csv_paths": [
+    "results/reviewer_revision/csv/fleet_multiseed_runs.csv"
+  ],
+  "source_csv_sha256": {
+    "results/reviewer_revision/csv/fleet_multiseed_runs.csv": "60edd502d833abd5bc29a18dc0fee2269286fb52ca4925b075093635f24f00d5"
+  },
+  "source_worksheet_names": [
+    "Fleet Runs",
+    "Fleet Summary"
+  ],
+  "validation_report": "paper_assets/figures/results/figure_validation_report.md",
+  "validation_status": "PASS",
+  "workbook_filename": "LedgerGuard_Comprehensive_Results.xlsx",
+  "workbook_sha256": "4d65d5085065a4baa364e3f83bb5d2b86519ee3195c516f34e098ad0e424d7a4"
+}

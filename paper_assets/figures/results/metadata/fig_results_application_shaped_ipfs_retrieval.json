@@ -1,0 +1,55 @@
+{
+  "aggregation_method": "All observations with box summaries on a logarithmic axis",
+  "bootstrap_seed": null,
+  "evidence_class": "application-shaped local IPFS retrieval",
+  "excluded_row_count": 0,
+  "figure_semantic_name": "fig_results_application_shaped_ipfs_retrieval",
+  "filters": {},
+  "generated_timestamp": "2026-09-02T17:00:37.091230+00:00",
+  "git_commit": "ede536f15ae826e78af88f5ac6b2f7b29ddff069",
+  "manuscript_label": "fig:ipfs-retrieval",
+  "maximum": 915.736736,
+  "median": 0.9486375,
+  "minimum": 0.882454,
+  "output_files": [
+    {
+      "path": "paper_assets/figures/results/fig_results_application_shaped_ipfs_retrieval.pdf",
+      "sha256": "5556452c32a860f7319467ac86f418f88e77eedaadae61ea32b74433d8a4b2cb"
+    },
+    {
+      "path": "paper_assets/figures/results/fig_results_application_shaped_ipfs_retrieval.svg",
+      "sha256": "50d48357f207bd2de89fe829157c01789431bac640a428bd05a3712e4f8abca7"
+    },
+    {
+      "path": "paper_assets/figures/results/fig_results_application_shaped_ipfs_retrieval.png",
+      "sha256": "17a8e9452ea9fcf905301d270ce36de2ae3233af914439d997f0891b169f92c8"
+    }
+  ],
+  "plotting_script_path": "experiments/analysis/make_results_figures.py",
+  "plotting_script_sha256": "f665e45f8ab05719eab948a5e0a0523e3bb396ee14030ae8dad8fe91e21d2569",
+  "row_count": 60,
+  "selected_font": "Times New Roman",
+  "source_columns": [
+    "profile",
+    "repetition",
+    "configured_application_delay_ms",
+    "configured_read_rate_limit_mbps",
+    "artifact_size_bytes",
+    "retrieval_time_seconds",
+    "status"
+  ],
+  "source_csv_paths": [
+    "results/reviewer_revision/raw/network/application_shaped_fetches.jsonl"
+  ],
+  "source_csv_sha256": {
+    "results/reviewer_revision/raw/network/application_shaped_fetches.jsonl": "e6cb4cd2739052f476050c75cc78e596098ae0fb82735627dc0c456caeb957bf"
+  },
+  "source_worksheet_names": [
+    "Network Summary",
+    "Network Distribution"
+  ],
+  "validation_report": "paper_assets/figures/results/figure_validation_report.md",
+  "validation_status": "PASS",
+  "workbook_filename": "LedgerGuard_Comprehensive_Results.xlsx",
+  "workbook_sha256": "4d65d5085065a4baa364e3f83bb5d2b86519ee3195c516f34e098ad0e424d7a4"
+}

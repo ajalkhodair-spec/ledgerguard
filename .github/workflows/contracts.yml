@@ -20,7 +20,7 @@ jobs:
       - name: Unit, fuzz, and invariant tests
         run: forge test --root contracts -vv
       - name: Coverage
-        run: forge coverage --root contracts --report summary
+        run: forge coverage --root contracts --ir-minimum --report summary
 
   slither:
     runs-on: ubuntu-latest

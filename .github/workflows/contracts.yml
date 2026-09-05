@@ -1,6 +1,7 @@
 name: Contracts
 
 on:
+  workflow_dispatch:
   push:
     paths: ["contracts/**", ".github/workflows/contracts.yml"]
   pull_request:

@@ -15,6 +15,7 @@ version: 2.0.0-poc
 date-released: 2026-09-05
 license: Apache-2.0
 repository-code: "https://github.com/ajalkhodair-spec/ledgerguard"
+doi: 10.5281/zenodo.22387058
 keywords:
   - firmware updates
   - permissioned ledger

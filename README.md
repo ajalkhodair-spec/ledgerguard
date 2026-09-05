@@ -1,5 +1,7 @@
 # LedgerGuard
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22387057.svg)](https://doi.org/10.5281/zenodo.22387057)
+
 LedgerGuard is a research proof of concept for auditable firmware-release governance over a permissioned Hyperledger Besu control plane. Firmware artifacts remain off-chain in content-addressed storage; the ledger records release commitments, threshold approvals, rollout state, authenticated device outcomes, and Merkle-rooted cohort summaries.
 
 The repository contains the original V1 PoC and a security-focused V2 protocol. V2 adds domain-separated signed receipts, device identity and revocation, expected-cohort commitments, independent summary confirmation, replay resistance, explicit rollout guards, and migration evidence. It is intended for reproducible research under controlled local conditions, not production deployment.
